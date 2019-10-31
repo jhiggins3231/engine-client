@@ -20,3 +20,24 @@
 .App-link {
   color: #09d3ac;
 }
+
+@font-face {
+  font-family: Verela;
+  src: url('./MotorAssets/VarelaRound-Regular.ttf');
+}
+@font-face {
+  font-family: Abril;
+  src: url('./MotorAssets/AbrilFatface-Regular.ttf');
+}
+@font-face {
+  font-family: Anton;
+  src: url('./MotorAssets/Anton-Regular.ttf');
+}
+@font-face {
+  font-family: Playfair;
+  src: url('./MotorAssets/PlayfairDisplaySC-Black.ttf');
+}
+@font-face {
+  font-family: Bangers;
+  src: url('./MotorAssets/Bangers-Regular.ttf')
+}
