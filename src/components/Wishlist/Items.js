@@ -134,7 +134,7 @@ const Wishlists = (props) => {
 
     // GET
     useEffect(() => {
-        fetch('https://jh-motorwishlist.herokuapp.com/wishlist', {
+        fetch(`${APIURL}/wishlist`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
