@@ -13,6 +13,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Slide from '@material-ui/core/Slide';
+import APIURL from '../../helpers/environment';
+
+
 //TABLES STYLES
 const StyledTableCell = withStyles(theme => ({
     head: {
@@ -145,7 +148,7 @@ const Wishlists = (props) => {
     }, [])
 
 const fetchWishlist = () => {
-    fetch('https://jh-motorwishlist.herokuapp.com/wishlist', {
+    fetch(`${APIURL}/wishlist`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -157,7 +160,7 @@ const fetchWishlist = () => {
         .catch(err => console.log(err))
 }
 const fetchSR = () => {
-    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/sr20', {
+    fetch(`${APIURL}/wishlist/sr20`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -171,7 +174,7 @@ const fetchSR = () => {
         .catch(err => console.log(err))
 }
 const fetchJZ = () => {
-    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/JZ', {
+    fetch(`${APIURL}/wishlist/JZ`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -185,7 +188,7 @@ const fetchJZ = () => {
         .catch(err => console.log(err))
 }
 const fetchLS = () => {
-    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/LS', {
+    fetch(`${APIURL}/wishlist/LS`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -199,7 +202,7 @@ const fetchLS = () => {
         .catch(err => console.log(err))
 }
 const fetchRB = () => {
-    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/RB', {
+    fetch(`${APIURL}/wishlist/RB`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -213,7 +216,7 @@ const fetchRB = () => {
         .catch(err => console.log(err))
 }
 const fetchKA = () => {
-    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/KA', {
+    fetch(`${APIURL}/wishlist/KA`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -238,7 +241,7 @@ const fetchKA = () => {
             id: id
         }
 
-        fetch('https://jh-motorwishlist.herokuapp.com/wishlist', {
+        fetch(`${APIURL}/wishlist`, {
             method: 'POST',
             body: JSON.stringify(wishlistObj),
             headers: {
@@ -263,7 +266,7 @@ const fetchKA = () => {
 
     const deleteWishlist = (e) => {
         e.preventDefault();
-        fetch(`https://jh-motorwishlist.herokuapp.com/wishlist/${id}`, {
+        fetch(`${APIURL}/wishlist/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -295,7 +298,7 @@ const fetchKA = () => {
             motorName: motorName,
             id: id
          }
-        fetch(`https://jh-motorwishlist.herokuapp.com/wishlist/${id}`, {
+        fetch(`${APIURL}/wishlist/${id}`, {
             method: 'PUT',
             body: JSON.stringify(updateWishlist),
             headers: {

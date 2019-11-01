@@ -3,7 +3,7 @@ import './Auth.css';
 import styled from 'styled-components';
 import ViewOne from '../Wishlist/ViewOne';
 import { makeStyles } from '@material-ui/core/styles';
-
+import APIURL from '../../helpers/environment';
 const Signtext = styled.div`
     text-align: center;
     font-family: Abril;
@@ -83,7 +83,7 @@ const signupFields = () => !login ?
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    const url = login ? 'https://jh-motorwishlist.herokuapp.com/auth/signin' : 'https://jh-motorwishlist.herokuapp.com/auth/signup'
+    const url = login ? `${APIURL}/auth/signin` : `${APIURL}auth/signup`
     const bodyObj = login ? {
         username: username,
         password: password
