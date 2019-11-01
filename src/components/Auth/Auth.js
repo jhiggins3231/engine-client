@@ -83,7 +83,7 @@ const signupFields = () => !login ?
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    const url = login ? 'http://localhost:3000/auth/signin' : 'http://localhost:3000/auth/signup'
+    const url = login ? 'https://jh-motorwishlist.herokuapp.com/auth/signin' : 'https://jh-motorwishlist.herokuapp.com/auth/signup'
     const bodyObj = login ? {
         username: username,
         password: password

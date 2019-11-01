@@ -41,7 +41,7 @@ const Navbar = (props) => {
         <Nav className='Toolbar'>
           <Typography variant="title">
             <Intro><h1>
-            240sx Engine Wishlist
+            240sx Engine Wishlist Tracker
             </h1>
             </Intro>
             </Typography>

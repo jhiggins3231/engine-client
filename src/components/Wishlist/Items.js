@@ -131,7 +131,7 @@ const Wishlists = (props) => {
 
     // GET
     useEffect(() => {
-        fetch('http://localhost:3000/wishlist', {
+        fetch('https://jh-motorwishlist.herokuapp.com/wishlist', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -145,7 +145,7 @@ const Wishlists = (props) => {
     }, [])
 
 const fetchWishlist = () => {
-    fetch('http://localhost:3000/wishlist', {
+    fetch('https://jh-motorwishlist.herokuapp.com/wishlist', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -157,7 +157,7 @@ const fetchWishlist = () => {
         .catch(err => console.log(err))
 }
 const fetchSR = () => {
-    fetch('http://localhost:3000/wishlist/sr20', {
+    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/sr20', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -171,7 +171,7 @@ const fetchSR = () => {
         .catch(err => console.log(err))
 }
 const fetchJZ = () => {
-    fetch('http://localhost:3000/wishlist/JZ', {
+    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/JZ', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -185,7 +185,7 @@ const fetchJZ = () => {
         .catch(err => console.log(err))
 }
 const fetchLS = () => {
-    fetch('http://localhost:3000/wishlist/LS', {
+    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/LS', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -199,7 +199,7 @@ const fetchLS = () => {
         .catch(err => console.log(err))
 }
 const fetchRB = () => {
-    fetch('http://localhost:3000/wishlist/RB', {
+    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/RB', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -213,7 +213,7 @@ const fetchRB = () => {
         .catch(err => console.log(err))
 }
 const fetchKA = () => {
-    fetch('http://localhost:3000/wishlist/KA', {
+    fetch('https://jh-motorwishlist.herokuapp.com/wishlist/KA', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -238,7 +238,7 @@ const fetchKA = () => {
             id: id
         }
 
-        fetch('http://localhost:3000/wishlist', {
+        fetch('https://jh-motorwishlist.herokuapp.com/wishlist', {
             method: 'POST',
             body: JSON.stringify(wishlistObj),
             headers: {
@@ -263,7 +263,7 @@ const fetchKA = () => {
 
     const deleteWishlist = (e) => {
         e.preventDefault();
-        fetch(`http://localhost:3000/wishlist/${id}`, {
+        fetch(`https://jh-motorwishlist.herokuapp.com/wishlist/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -295,7 +295,7 @@ const fetchKA = () => {
             motorName: motorName,
             id: id
          }
-        fetch(`http://localhost:3000/wishlist/${id}`, {
+        fetch(`https://jh-motorwishlist.herokuapp.com/wishlist/${id}`, {
             method: 'PUT',
             body: JSON.stringify(updateWishlist),
             headers: {

@@ -212,8 +212,9 @@ const handleClickClose = () => {
                         <Typography className={classes.details}>
                         <Para>
                     <li>Currently this feature does not distinguish between motor variants. I.E. 1JZ or 2JZ. If you'd like to distinguish between variants you may insert the specific motor name in the Item name field. </li>
-                    <li>You have the ability to create, update, and delete items from your wishlist.</li>
+                    <li>You have the ability to create, update, and delete items from your wishlist. In order to delete or update an item just grab the Item ID and enter it into the Item ID field.</li>
                     <li>Each button is intended to take you to different engine wishlist as well as show you an image of the selected motor.  Allowing you to have an image for inspiration and to create multiple wishlist.</li>
+                    <li>Item ID is not needed unless you are updating or deleting an item in the table.</li>
                         </Para>
                         </Typography>
                     </ExpansionPanelDetails>
