@@ -58,7 +58,6 @@ const Background = styled.div`
 `;
 
 const Wishlists = (props) => {
-    console.log(props)
     const [itemName, setItemName] = useState('');
     const [price, setPrice] = useState('');
     const [location, setLocation] = useState('');
