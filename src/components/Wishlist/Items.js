@@ -130,7 +130,8 @@ const Wishlists = (props) => {
     const handleChange = () => {
         setChecked(true);
       };
-
+    const timer = setTimeout(() => {
+    }, 500);
 
     // GET
     useEffect(() => {
@@ -170,6 +171,7 @@ const fetchSR = () => {
         .then(res => res.json())
         .then(json => setWishlist(json))
         .then(handleOpen1)
+        .then(timer)
         .then(handleChange)
         .catch(err => console.log(err))
 }
