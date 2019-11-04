@@ -10,6 +10,8 @@ switch (window.location.hostname) {
     case 'https://jh-wishlistserver.herokuapp.com/':
         // this is the full url of your deployed API
         APIURL = 'https://jh-wishlistserver.herokuapp.com/'
+        break;
+    default:
 }
 
 export default APIURL;
