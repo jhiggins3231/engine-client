@@ -131,6 +131,7 @@ const Wishlists = (props) => {
         setChecked(true);
       };
     const timer = setTimeout(() => {
+        setOpen1(false);
     }, 500);
 
     // GET
