@@ -131,15 +131,18 @@ const Wishlists = (props) => {
         setChecked(true);
       };
     const timer = setTimeout(() => {
-        setOpen(false);
         setOpen1(false);
         setOpen2(false);
         setOpen3(false);
         setOpen4(false);
         setOpen5(false);
+    }, 1000);
+
+    const timer2 = setTimeout(() => {
+        setOpen(false);
         setOpen6(false);
         setOpen7(false);
-    }, 1000);
+    }, 2000)
 
     // GET
     useEffect(() => {
@@ -274,7 +277,7 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick(TransitionRight))
-        .then(timer)
+        .then(timer2)
         .catch(err => console.log(err))
     }
     
@@ -300,7 +303,7 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick3(TransitionRight))
-        .then(timer)
+        .then(timer2)
         .then (fetchWishlist())
         .catch(err => console.log(err))
     }
@@ -333,7 +336,7 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick2(TransitionRight))
-        .then(timer)
+        .then(timer2)
         .then (fetchWishlist())
         .catch(err => console.log(err))
     }
