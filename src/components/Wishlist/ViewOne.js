@@ -16,7 +16,6 @@ const Background = styled.div`
 const ViewOne = (props) => {
     return(
         <Background>
-            <Navbar />
             <Resize src={car} />       
         </Background>
     )
