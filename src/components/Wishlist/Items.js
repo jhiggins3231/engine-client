@@ -130,13 +130,6 @@ const Wishlists = (props) => {
     const handleChange = () => {
         setChecked(true);
       };
-    const timer = setTimeout(() => {
-        setOpen1(false);
-        setOpen2(false);
-        setOpen3(false);
-        setOpen4(false);
-        setOpen5(false);
-    }, 2000);
 
     // GET
     useEffect(() => {
