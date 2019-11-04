@@ -136,12 +136,12 @@ const Wishlists = (props) => {
         setOpen3(false);
         setOpen4(false);
         setOpen5(false);
-    }, 1000);
+    }, 2000);
 
     const timer2 = setTimeout(() => {
-        setOpen(false);
-        setOpen6(false);
-        setOpen7(false);
+        setOpen(true);
+        setOpen6(true);
+        setOpen7(true);
     }, 2000)
 
     // GET
