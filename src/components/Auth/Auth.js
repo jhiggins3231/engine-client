@@ -83,7 +83,7 @@ const signupFields = () => !login ?
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    const url = login ? `${APIURL}/auth/signin` : `${APIURL}auth/signup`
+    const url = login ? `${APIURL}/auth/signin` : `${APIURL}/auth/signup`
     const bodyObj = login ? {
         username: username,
         password: password
