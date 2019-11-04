@@ -131,8 +131,15 @@ const Wishlists = (props) => {
         setChecked(true);
       };
     const timer = setTimeout(() => {
+        setOpen(false);
         setOpen1(false);
-    }, 500);
+        setOpen2(false);
+        setOpen3(false);
+        setOpen4(false);
+        setOpen5(false);
+        setOpen6(false);
+        setOpen7(false);
+    }, 1000);
 
     // GET
     useEffect(() => {
@@ -187,6 +194,7 @@ const fetchJZ = () => {
         .then(res => res.json())
         .then(json => setWishlist(json))
         .then(handleOpen2)
+        .then(timer)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -201,6 +209,7 @@ const fetchLS = () => {
         .then(res => res.json())
         .then(json => setWishlist(json))
         .then(handleOpen3)
+        .then(timer)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -215,6 +224,7 @@ const fetchRB = () => {
         .then(res => res.json())
         .then(json => setWishlist(json))
         .then(handleOpen4)
+        .then(timer)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -229,6 +239,7 @@ const fetchKA = () => {
         .then(res => res.json())
         .then(json => setWishlist(json))
         .then(handleOpen5)
+        .then(timer)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -263,6 +274,7 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick(TransitionRight))
+        .then(timer)
         .catch(err => console.log(err))
     }
     
@@ -288,6 +300,7 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick3(TransitionRight))
+        .then(timer)
         .then (fetchWishlist())
         .catch(err => console.log(err))
     }
@@ -320,6 +333,7 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick2(TransitionRight))
+        .then(timer)
         .then (fetchWishlist())
         .catch(err => console.log(err))
     }
