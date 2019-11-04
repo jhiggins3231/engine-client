@@ -58,6 +58,7 @@ const Background = styled.div`
 `;
 
 const Wishlists = (props) => {
+    console.log(props)
     const [itemName, setItemName] = useState('');
     const [price, setPrice] = useState('');
     const [location, setLocation] = useState('');
@@ -241,7 +242,7 @@ const fetchKA = () => {
             id: id
         }
 
-        fetch(`${APIURL}/wishlist`, {
+        fetch(`${APIURL}/wishlist/${motorName}`, {
             method: 'POST',
             body: JSON.stringify(wishlistObj),
             headers: {
