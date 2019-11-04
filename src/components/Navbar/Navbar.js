@@ -24,7 +24,7 @@ const Store = styled.div`
 `;
 
 const Nav = styled.div`
-  background-color: #9a8f97;
+  background-color: rgba(0, 0, 0, 0.8);
   height: 75px;
   font-size: 28px;
 `;
