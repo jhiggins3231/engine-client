@@ -101,7 +101,7 @@ fetch (url, {
     }
     })
     .then(res => res.json())
-    .then(json => props.setSession(json.sessionToken))
+    .then(json => console.log(json))
 }
 
 const classes = useStyles();
