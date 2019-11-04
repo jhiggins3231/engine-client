@@ -237,8 +237,8 @@ const handleClickClose = () => {
         aria-labelledby="spring-modal-title"
         aria-describedby="spring-modal-description"
         className={classes.modal}
-        open={props.open1, 2000}
-        onClose={props.handleClose}
+        open={props.open1}
+        onClose={props.handleClose, 2000}
         
         BackdropComponent={Backdrop}
         BackdropProps={{
