@@ -138,12 +138,6 @@ const Wishlists = (props) => {
         setOpen5(false);
     }, 2000);
 
-    const timer2 = setTimeout(() => {
-        setOpen(true);
-        setOpen6(true);
-        setOpen7(true);
-    }, 2000)
-
     // GET
     useEffect(() => {
         fetch(`${APIURL}/wishlist`, {
@@ -278,7 +272,6 @@ const fetchKA = () => {
         )
         .then(handleClick(TransitionRight))
         .catch(err => console.log(err))
-        .then(timer2)
     }
     
 
@@ -304,7 +297,6 @@ const fetchKA = () => {
         )
         .then(handleClick3(TransitionRight))
         .then (fetchWishlist())
-        .then(timer2)
         .catch(err => console.log(err))
     }
     
@@ -337,7 +329,6 @@ const fetchKA = () => {
         )
         .then(handleClick2(TransitionRight))
         .then (fetchWishlist())
-        .then(timer2)
         .catch(err => console.log(err))
     }
 
