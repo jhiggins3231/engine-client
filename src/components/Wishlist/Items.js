@@ -277,8 +277,8 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick(TransitionRight))
-        .then(timer2)
         .catch(err => console.log(err))
+        .then(timer2)
     }
     
 
@@ -303,8 +303,8 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick3(TransitionRight))
-        .then(timer2)
         .then (fetchWishlist())
+        .then(timer2)
         .catch(err => console.log(err))
     }
     
@@ -336,8 +336,8 @@ const fetchKA = () => {
             setItemId('')
         )
         .then(handleClick2(TransitionRight))
-        .then(timer2)
         .then (fetchWishlist())
+        .then(timer2)
         .catch(err => console.log(err))
     }
 
