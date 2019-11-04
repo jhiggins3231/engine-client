@@ -242,7 +242,7 @@ const fetchKA = () => {
             id: id
         }
 
-        fetch(`${APIURL}/wishlist/${motorName}`, {
+        fetch(`${APIURL}/wishlist`, {
             method: 'POST',
             body: JSON.stringify(wishlistObj),
             headers: {
