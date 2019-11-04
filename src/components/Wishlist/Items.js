@@ -177,7 +177,6 @@ const fetchSR = () => {
         .then(json => setWishlist(json))
         .then(handleOpen1)
         .then(handleChange)
-        .then(timer)
         .catch(err => console.log(err))
 }
 const fetchJZ = () => {
@@ -192,7 +191,6 @@ const fetchJZ = () => {
         .then(json => setWishlist(json))
         .then(handleOpen2)
         .then(handleChange)
-        .then(timer)
         .catch(err => console.log(err))
 }
 const fetchLS = () => {
@@ -207,7 +205,6 @@ const fetchLS = () => {
         .then(json => setWishlist(json))
         .then(handleOpen3)
         .then(handleChange)
-        .then(timer)
         .catch(err => console.log(err))
 }
 const fetchRB = () => {
@@ -222,7 +219,6 @@ const fetchRB = () => {
         .then(json => setWishlist(json))
         .then(handleOpen4)
         .then(handleChange)
-        .then(timer)
         .catch(err => console.log(err))
 }
 const fetchKA = () => {
@@ -237,7 +233,6 @@ const fetchKA = () => {
         .then(json => setWishlist(json))
         .then(handleOpen5)
         .then(handleChange)
-        .then(timer)
         .catch(err => console.log(err))
 }
 
