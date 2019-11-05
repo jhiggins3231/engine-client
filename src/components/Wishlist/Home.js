@@ -140,7 +140,7 @@ const useStyles = makeStyles(theme => ({
       borderRadius: '50%'
     },
     card: {
-      maxWidth: 345,
+      maxWidth: 305,
       display: 'inline-block'
     },
     media: {
@@ -311,13 +311,15 @@ const handleClickClose = () => {
       </CardActions>
     </Card>
     </Grid>
+    </Grid>
+    </Grid>
     <Grid spacing={1} container className={classes.root3}>
       <Grid container
   direction="row"
   justify="center"
   alignItems="center"
 >
-<Grid item xs={12}></Grid>
+<Grid item xs={12}>
 <Card className={classes.card} id='rb'>
       <CardActionArea>
         <CardMedia
@@ -363,7 +365,6 @@ const handleClickClose = () => {
       </CardActions>
     </Card>
     
-</Grid>
 </Grid>
 </Grid>
 </Grid>
