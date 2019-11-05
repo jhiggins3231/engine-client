@@ -22,19 +22,9 @@ import Switch from '@material-ui/core/Switch';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
-const PurpleSwitch = withStyles({
-  switchBase: {
-    color: 'purple',
-    '&$checked': {
-      background: '#FFFFFF',
-    },
-    '&$checked + $track': {
-      background: '#3993DD'
-    },
-  },
-  checked: {},
-  track: {},
-})(Switch);
+
+
+
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -95,13 +85,7 @@ const useStyles = makeStyles(theme => ({
 
 const Home = (props) => {
     const classes = useStyles();
-    const [state, setState] = useState({
-      checkedA: true,
-    });
-  
-    const handleChange = name => event => {
-      setState({ ...state, [name]: event.target.checked });
-    };    
+      
 
 
 
@@ -112,18 +96,7 @@ const Home = (props) => {
         <br />
         <br />
         <br />
-        <FormGroup className={classes.switch}>
-        <FormControlLabel
-          control={
-            <PurpleSwitch
-              checked={state.checkedA}
-              onChange={handleChange('checkedA')}
-              value="checkedA"
-            />
-          }
-          label="Background Switch"
-        />
-        </FormGroup>
+        
 <div className={classes.row}>
 <Grid spacing={2} container className={classes.root3}>      
       <Grid container
