@@ -38,18 +38,6 @@ const useStyles = makeStyles(theme => ({
     input: {
       display: 'none',
     },
-    modal: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    paper: {
-        color: '#52d1dc',
-        border: '2px solid #000',
-        boxShadow: theme.shadows[5],
-        padding: theme.spacing(2, 4, 3),
-        backgroundColor: '#FFFFFF',
-    },
     appBar: {
           position: 'relative',
           width: '500px',
@@ -63,41 +51,6 @@ const useStyles = makeStyles(theme => ({
           width: '100%',
           fontFamily: 'Playfair'
           
-    },
-    root: {
-        width: '500px',
-    },
-    heading: {
-        fontSize: '18px',
-        fontWeight: theme.typography.fontWeightRegular,
-        backgroundColor: '#2b2b2b2',
-        fontFamily: 'Playfair'
-    },
-    details: {
-        backgroundColor: '#b2b2b2',
-        fontFamily: 'Playfair'
-    },
-    panel: {
-        backgroundColor: '#b2b2b2',
-    },
-    introButton: {
-        justifyContent: 'center',
-        width: '100px',
-        height: '50px',
-        backgroundColor: '#52d1dc',
-        color: '#FFFFFF',
-        left: '42%',
-        top: '50%',
-        // transform: 'translate(0%, -50%)'
-    },
-    root1: {
-        position: 'relative',
-        width: '100%',
-        padding: '75px',
-      },
-    close: {
-      backgroundColor: '#b2b2b2',
-      borderRadius: '50%'
     },
     card: {
       maxWidth: 305,
@@ -118,6 +71,10 @@ const useStyles = makeStyles(theme => ({
     row: {
       display: 'inline-block',
       justifyContent: 'center'
+    },
+    ImageGrid: {
+      display: 'inline-block',
+      justifyContent: 'right'
     }
 }));
 
@@ -284,10 +241,10 @@ const Home = (props) => {
       </CardActions>
     </Card>
 
-<ImageGrid />
     
 </Grid>
 </Grid>
+<ImageGrid className={ImageGrid} />
 </Grid>
 </div>
 </Background>
