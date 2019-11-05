@@ -262,118 +262,94 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-
-
-{/* <Button id="sr" onClick={props.fetchSR} variant="contained" className={classes.button} >SR20        
-</Button>
-            <Modal
-        aria-labelledby="spring-modal-title"
-        aria-describedby="spring-modal-description"
-        className={classes.modal}
-        open={props.open1}
-        onClose={props.handleClose}
-        
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={props.open1}>
-          <div className={classes.paper}>
-            <h2 id="spring-modal-title">SR20 Inspiration</h2>
-            <p id="spring-modal-description"><img src={sr} alt="sr20"></img> </p>
-          </div>
-        </Fade>
-      </Modal> */}
-<Button id="jz" onClick={props.fetchJZ} variant="contained" className={classes.button}>JZ
-</Button>
-            <Modal
-        aria-labelledby="spring-modal-title"
-        aria-describedby="spring-modal-description"
-        className={classes.modal}
-        open={props.open2}
-        onClose={props.handleClose}
-        checked={props.checked}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={props.open2}>
-          <div className={classes.paper}>
-            <h2 id="spring-modal-title">JZ Inspiration</h2>
-            <p id="spring-modal-description"><img src={jz} alt="jz"></img> </p>
-          </div>
-        </Fade>
-      </Modal>
-<Button id="Lsx" onClick={props.fetchLS} variant="contained" className={classes.button}>LSx
-</Button>
-            <Modal
-        aria-labelledby="spring-modal-title"
-        aria-describedby="spring-modal-description"
-        onClickAway={props.handleClickAway}
-        className={classes.modal}
-        open={props.open3}
-        onClose={props.handleClose}
-        checked={props.checked}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={props.open3}>
-          <div className={classes.paper}>
-            <h2 id="spring-modal-title">American Muscle Inspiration</h2>
-            <p id="spring-modal-description"><img src={ls} alt="ls"></img> </p>
-          </div>
-        </Fade>
-      </Modal>
-<Button id="rb" onClick={props.fetchRB} variant="contained" className={classes.button}>RB
-</Button>
-            <Modal
-        aria-labelledby="spring-modal-title"
-        aria-describedby="spring-modal-description"
-        className={classes.modal}
-        open={props.open4}
-        onClose={props.handleClose}
-        checked={props.checked}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={props.open4}>
-          <div className={classes.paper}>
-            <h2 id="spring-modal-title">RB Inspiration</h2>
-            <p id="spring-modal-description"><img src={rb} alt="rb"></img> </p>
-          </div>
-        </Fade>
-      </Modal>
-<Button id="ka" onClick={props.fetchKA} variant="contained" className={classes.button}>KA</Button>
-<Modal
-        aria-labelledby="spring-modal-title"
-        aria-describedby="spring-modal-description"
-        className={classes.modal}
-        open={props.open5}
-        onClose={props.handleClose}
-        checked={props.checked}
-        closeAfterTransition
-        BackdropComponent={Backdrop}
-        BackdropProps={{
-          timeout: 500,
-        }}
-      >
-        <Fade in={props.open5}>
-          <div className={classes.paper}>
-            <h2 id="spring-modal-title">KA-T Inspiration</h2>
-            <p id="spring-modal-description"><img src={ka} alt="ka"></img> </p>
-          </div>
-        </Fade>
-      </Modal>
-<Button id="all" onClick={props.getWishlist} variant="contained" className={classes.button}>List All</Button>
+<Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={jz}
+          title="JZ"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            1/2 JZ
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            One of the most desirable swaps into the 240sx. Due to it's great sound and ability to handle massive power.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button onClick={props.fetchJZ} size="small" color="primary">
+          JZ Wishlist
+        </Button>
+      </CardActions>
+    </Card>
+<Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={ls}
+          title="LSx"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            LSx
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            A very desirable swap into the 240sx chassis. The LS line of motors can be found for cheap and are very reliable. They make easy power for the price.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button onClick={props.fetchLS} size="small" color="primary">
+          LSx Wishlist
+        </Button>
+      </CardActions>
+    </Card>
+<Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={rb}
+          title="RB"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            RB20/25/26
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            RB's are known for their amazing sounds. Often compared to the JZ motors.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button onClick={props.fetchRB} size="small" color="primary">
+          RB Wishlist
+        </Button>
+      </CardActions>
+    </Card>
+<Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={ka}
+          title="KA"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            KA24DE/T
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Not always a swap but an easy motor to upgrade if you don't wish to do a complete swap!
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button onClick={props.fetchKA} size="small" color="primary">
+          KA Wishlist
+        </Button>
+      </CardActions>
+    </Card>
         </Motors>
     </div> 
 </Background>
