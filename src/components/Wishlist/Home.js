@@ -366,6 +366,7 @@ const handleClickClose = () => {
 </Grid>
 </Grid>
 </Grid>
+</Grid>
 </div>
 </Background>
     );
