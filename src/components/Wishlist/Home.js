@@ -69,8 +69,9 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: 'red'
     },
     ImageGrid: {
-        width: '500px',
-        right: '10%',
+        width: '550px',
+        left: '50%',
+        top: '50%',
         backgroundColor: 'black'
     }
 }));
