@@ -62,11 +62,6 @@ const useStyles = makeStyles(theme => ({
         padding: '10px',
         justifyContent: 'center'
     },
-    row: {
-        display: 'inline-block',
-        justifyContent: 'center',
-        width: '960px',
-    }
 }));
 
 
@@ -79,7 +74,7 @@ const Home = (props) => {
 
 
     return (
-      <div className={classes.row}>
+      <div>
       <br />
       <br />
       <br />
@@ -87,10 +82,10 @@ const Home = (props) => {
       <br />
   <Container>
     <Row>
-      <Col md>
+      <Col md={4}>
       <ImageGrid />  
       </Col>
-      <Col md>
+      <Col md={8}>
 <Grid spacing={2} className={classes.root3}> 
   <Card className={classes.card} id='sr'>
       <CardActionArea>
