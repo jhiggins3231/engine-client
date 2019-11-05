@@ -3,6 +3,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import tileData from './tileData';
+import tile1 from '../../MotorAssets/tile1.jpg';
+import tile2 from '../../MotorAssets/tile2.jpg';
+import tile3 from '../../MotorAssets/tile3.jpg';
+import tile4 from '../../MotorAssets/tile4.jpg';
+import tile5 from '../../MotorAssets/tile5.jpg';
+import tile6 from '../../MotorAssets/tile6.jpg';
+import tile7 from '../../MotorAssets/tile7.jpg';
+import tile8 from '../../MotorAssets/tile8.jpg';
+import tile9 from '../../MotorAssets/tile9.jpg';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,7 +27,53 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-
+const tileData = [
+    {
+        img: tile1,
+        title: 'Image',
+        cols: 2,
+    },
+    {
+        img: tile2,
+        title: 'Image',
+        cols: 2,
+    },
+    {
+        img: tile3,
+        title: 'Image',
+        cols: 2,
+    },
+    {
+        img: tile4,
+        title: 'Image',
+        cols: 2,
+    },
+    {
+        img: tile5,
+        title: 'Image',
+        cols: 2,
+    },
+    {
+        img: tile6,
+        title: 'Image',
+        cols: 2,
+    },
+    {
+        img: tile7,
+        title: 'Image',
+        cols: 2,
+    },
+    {
+        img: tile8,
+        title: 'Image',
+        cols: 2,
+    },
+    {
+        img: tile9,
+        title: 'Image',
+        cols: 2,
+    },
+]
 
 
 export default function ImageGridList() {
