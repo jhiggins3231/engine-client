@@ -74,8 +74,6 @@ const useStyles = makeStyles(theme => ({
       width: '960px'
     },
     ImageGrid: {
-      display: 'inline-block',
-      alignSelf: 'right',
       width: '500px',
       right: '10%'
     }
