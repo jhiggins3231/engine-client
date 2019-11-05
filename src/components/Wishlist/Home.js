@@ -144,6 +144,12 @@ const useStyles = makeStyles(theme => ({
     close: {
       backgroundColor: '#b2b2b2',
       borderRadius: '50%'
+    },
+    card: {
+      maxWidth: 345,
+    },
+    media: {
+      height: 140,
     }
 }));
 
@@ -228,7 +234,32 @@ const handleClickClose = () => {
             </div>
             <div className="mainDiv">
         <Motors className="Buttons">
-<Button id="sr" onClick={props.fetchSR} variant="contained" className={classes.button} >SR20        
+
+        <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={sr}
+          title="SR20DET"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            SR20DET
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            One of the most common and affordable swaps into the Nissan 240sx.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button onClick={props.fetchSR} size="small" color="primary">
+          SR20
+        </Button>
+      </CardActions>
+    </Card>
+
+
+{/* <Button id="sr" onClick={props.fetchSR} variant="contained" className={classes.button} >SR20        
 </Button>
             <Modal
         aria-labelledby="spring-modal-title"
@@ -248,7 +279,7 @@ const handleClickClose = () => {
             <p id="spring-modal-description"><img src={sr} alt="sr20"></img> </p>
           </div>
         </Fade>
-      </Modal>
+      </Modal> */}
 <Button id="jz" onClick={props.fetchJZ} variant="contained" className={classes.button}>JZ
 </Button>
             <Modal
