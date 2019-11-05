@@ -90,11 +90,9 @@ const Home = (props) => {
 
     return (
         <Background className="main">
-<div className={classes.ImageGrid}>       
-<ImageGrid />
-
 <div className={classes.row}>
-<Grid spacing={2} container className={classes.root3}>
+<Grid spacing={2} container className={classes.root3}>      
+<ImageGrid />
       <Grid container
   direction="row"
   justify="space-between"
@@ -241,12 +239,9 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-
-    
 </Grid>
 </Grid>
 </Grid>
-</div>
 </div>
 </Background>
     );
