@@ -87,13 +87,13 @@ const Home = (props) => {
         
 <div className={classes.row}>
 <Grid spacing={2} container className={classes.root3}>
-<ImageGrid />   
       <Grid container
   direction="row"
   justify="space-between"
   alignItems="center"
 >
 <Grid item xs zeroMinWidth>
+<ImageGrid />   
   <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
