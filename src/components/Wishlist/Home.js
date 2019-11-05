@@ -153,7 +153,8 @@ const useStyles = makeStyles(theme => ({
     root3: {
       flexGrow: 1,
       display: 'inline-block',
-      padding: '10px'
+      padding: '10px',
+      justifyContent: 'center'
     },
     row: {
       display: 'inline-block',
