@@ -9,6 +9,16 @@ import Typography from '@material-ui/core/Typography'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import StoreIcon from '@material-ui/icons/Store';
 import styled from 'styled-components';
+import { makeStyles } from '@material-ui/core/styles';
+
+
+const useStyles = makeStyles(theme => ({
+  toolbar: {
+    background: 'rgba(0, 0, 0, 0.8)',
+  }
+
+}))
+
 
 const Icon = styled.div`
   display: block;
@@ -26,11 +36,7 @@ const Store = styled.div`
   transform: translate(-10%, -50%)
 `;
 
-const Nav = styled.div`
-  background-color: #9a8f97;
-  height: 75px;
-  font-size: 28px;
-`;
+
 const Intro = styled.div`
   position: absolute;
   left: 50%;
@@ -50,13 +56,15 @@ function HideOnScroll(props) {
   );
 }
 
+
 const Navbar = (props) => {
+  const classes = useStyles();
   return(
     <React.Fragment>
     <CssBaseline />
     <HideOnScroll {...props}>
       <AppBar>
-          <Toolbar>
+          <Toolbar className={classes.toolbar}>
           <Typography variant="title">
             <Intro><h1>
             240sx Engine Wishlist Tracker
