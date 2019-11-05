@@ -55,8 +55,7 @@ const Navbar = (props) => {
     <React.Fragment>
     <CssBaseline />
     <HideOnScroll {...props}>
-      <AppBar className='Appbar' position="static">
-        <Nav className='Toolbar'>
+      <AppBar>
           <Toolbar>
           <Typography variant="title">
             <Intro><h1>
@@ -69,7 +68,6 @@ const Navbar = (props) => {
             <Icon>
             <ExitToAppIcon icon={<ExitToAppIcon />}  onClick= {() => props.setSession(undefined)}></ExitToAppIcon></Icon>
             </Toolbar>
-        </Nav>
       </AppBar>
       </HideOnScroll>
       </React.Fragment>
