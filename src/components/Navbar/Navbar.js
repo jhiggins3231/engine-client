@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
@@ -54,6 +55,7 @@ const Navbar = (props) => {
     <HideOnScroll {...props}>
       <AppBar className='Appbar' position="static">
         <Nav className='Toolbar'>
+          <Toolbar>
           <Typography variant="title">
             <Intro><h1>
             240sx Engine Wishlist Tracker
@@ -64,6 +66,7 @@ const Navbar = (props) => {
             <StoreIcon icon={<StoreIcon />} onClick={() => window.open("https://www.enjukuracing.com")}></StoreIcon></Store>
             <Icon>
             <ExitToAppIcon icon={<ExitToAppIcon />}  onClick= {() => props.setSession(undefined)}></ExitToAppIcon></Icon>
+            </Toolbar>
         </Nav>
       </AppBar>
       </HideOnScroll>
