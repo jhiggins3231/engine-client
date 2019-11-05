@@ -261,7 +261,7 @@ const handleClickClose = () => {
             SR20DET
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            One of the most common and affordable swaps into the Nissan 240sx.
+            Here is the list of items you've added for the SR20.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -283,7 +283,7 @@ const handleClickClose = () => {
             1/2 JZ
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            One of the most desirable swaps into the 240sx. Due to it's great sound and ability to handle massive power.
+          Here is the list of items you've added for the 1/2JZ.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -305,7 +305,7 @@ const handleClickClose = () => {
             LSx
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            A very desirable swap into the 240sx chassis. The LS line of motors can be found for cheap and are very reliable. They make easy power for the price.
+          Here is the list of items you've added for the LSx.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -315,6 +315,14 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
+    </Grid>
+    </Grid>
+    <Grid container
+  direction="row"
+  justify="center"
+  alignItems="center"
+>
+<Grid item xs zeroMinWidth>
 <Card className={classes.card} id='rb'>
       <CardActionArea>
         <CardMedia
@@ -327,7 +335,7 @@ const handleClickClose = () => {
             RB20/25/26
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            RB's are known for their amazing sounds. Often compared to the JZ motors.
+          Here is the list of items you've added for the RB20/25/26.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -349,7 +357,7 @@ const handleClickClose = () => {
             KA24DE/T
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Not always a swap but an easy motor to upgrade if you don't wish to do a complete swap!
+          Here is the list of items you've added for the KA24.
           </Typography>
         </CardContent>
       </CardActionArea>
