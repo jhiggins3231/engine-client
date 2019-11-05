@@ -3,8 +3,6 @@ import './Home.css';
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs';
 import sr from '../../MotorAssets/sr20.jpg';
 import jz from '../../MotorAssets/2jz.jpg';
@@ -28,6 +26,7 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Grid from '@material-ui/core/Grid';
 
 
 
@@ -238,9 +237,8 @@ const handleClickClose = () => {
             </Dialog>
             </div>
             <div className="mainDiv">
-        <Motors className="Buttons">
-
-        <Card className={classes.card}>
+<Grid spacing={2}>
+  <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -350,10 +348,9 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-        </Motors>
+</Grid>
     </div> 
 </Background>
     );
-
 }
 export default Home;
