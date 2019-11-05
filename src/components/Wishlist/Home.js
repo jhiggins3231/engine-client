@@ -152,6 +152,10 @@ const useStyles = makeStyles(theme => ({
     card: {
       maxWidth: 345,
     },
+    card2: {
+      maxWidth: 345,
+      left: '20%',
+    },
     media: {
       height: 140,
     }
@@ -287,7 +291,7 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-<Card className={classes.card}>
+<Card className={classes.card2}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
