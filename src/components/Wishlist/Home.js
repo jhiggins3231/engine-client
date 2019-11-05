@@ -66,7 +66,6 @@ const useStyles = makeStyles(theme => ({
         display: 'inline-block',
         justifyContent: 'center',
         width: '960px',
-        backgroundColor: 'red'
     }
 }));
 
@@ -236,9 +235,10 @@ const Home = (props) => {
     </Card>
 </Grid>
 </Grid>
+<ImageGrid />
 </Grid>
 </div>
-<ImageGrid />
+
 </div>
     );
 }
