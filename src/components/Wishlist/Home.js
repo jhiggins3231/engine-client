@@ -36,14 +36,6 @@ const PurpleSwitch = withStyles({
   track: {},
 })(Switch);
 
-
-
-
-const Background = styled.div`
-    padding: (0, 0, 0 , 0);
-    background: #FFFFFF
-`;
-
 const useStyles = makeStyles(theme => ({
     button: {
       width: '100px',
@@ -91,6 +83,11 @@ const useStyles = makeStyles(theme => ({
     ImageGrid: {
         width: '500px',
         right: '10%'
+    },
+    switch: {
+        left: '50%',
+        top: '50%',
+        transform: 'translate (-50%, -50%)'
     }
 }));
 
@@ -110,12 +107,12 @@ const Home = (props) => {
 
 
     return (
-      <Background className="main">
+      <div>
         <br />
         <br />
         <br />
         <br />
-        <FormGroup>
+        <FormGroup className={classes.switch}>
         <FormControlLabel
           control={
             <PurpleSwitch
@@ -282,7 +279,7 @@ const Home = (props) => {
 <div className={ImageGrid}>
 <ImageGrid />
 </div>
-</Background>
+</div>
     );
 }
 export default Home;
