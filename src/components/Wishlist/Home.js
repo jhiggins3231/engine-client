@@ -67,12 +67,6 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
         width: '960px',
         backgroundColor: 'red'
-    },
-    ImageGrid: {
-        width: '550px',
-        left: '50%',
-        top: '50%',
-        backgroundColor: 'black'
     }
 }));
 
@@ -244,9 +238,7 @@ const Home = (props) => {
 </Grid>
 </Grid>
 </div>
-<div className={ImageGrid}>
 <ImageGrid />
-</div>
 </div>
     );
 }
