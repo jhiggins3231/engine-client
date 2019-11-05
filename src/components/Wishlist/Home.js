@@ -77,7 +77,7 @@ const useStyles = makeStyles(theme => ({
       display: 'inline-block',
       alignSelf: 'right',
       width: '500px',
-      left: '80%'
+      right: '10%'
     }
 }));
 
