@@ -237,7 +237,12 @@ const handleClickClose = () => {
             </Dialog>
             </div>
             <div className="mainDiv">
-<Grid spacing={2}>
+<Grid spacing={1} container
+  direction="row"
+  justify="center"
+  alignItems="center"
+>
+  <Grid item xs={12}>
   <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
@@ -348,6 +353,7 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
+</Grid>
 </Grid>
     </div> 
 </Background>
