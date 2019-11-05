@@ -149,13 +149,6 @@ const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
     },
-    paper: {
-      height: 140,
-      width: 100,
-    },
-    control: {
-      padding: theme.spacing(2),
-    },
 }));
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -237,6 +230,7 @@ const handleClickClose = () => {
                     </div>
             </Dialog>
             </div>
+
 <Grid spacing={1} container className={classes.root}>
       <Grid container
   direction="row"
@@ -244,6 +238,7 @@ const handleClickClose = () => {
   alignItems="center"
 >
 <Grid item xs={12}>
+<CardGroup>
   <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
@@ -354,6 +349,7 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
+    </CardGroup>
 </Grid>
 </Grid>
 </Grid>
