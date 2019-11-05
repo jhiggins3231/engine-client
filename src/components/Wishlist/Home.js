@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Home.css';
 import ImageGrid from './ImageGrid';
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import main from '../../MotorAssets/mainPage1.jpg';
 import sr from '../../MotorAssets/sr20.jpg';
 import jz from '../../MotorAssets/2jz.jpg';
@@ -17,16 +18,17 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Switch from '@material-ui/core/Switch'
+import Switch from '@material-ui/core/Switch';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const PurpleSwitch = withStyles({
   switchBase: {
     color: purple[300],
     '&$checked': {
-      color: purple[500],
+      background: '#FFFFFF',
     },
     '&$checked + $track': {
-      backgroundColor: purple[500],
       background: '#3993DD'
     },
   },
@@ -97,8 +99,13 @@ const useStyles = makeStyles(theme => ({
 
 const Home = (props) => {
     const classes = useStyles();
-    
-    
+    const [state, setState] = useState({
+      checkedA: true,
+    });
+  
+    const handleChange = name => event => {
+      setState({ ...state, [name]: event.target.checked });
+    };    
 
 
 
