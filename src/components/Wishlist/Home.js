@@ -156,7 +156,8 @@ const useStyles = makeStyles(theme => ({
       padding: '10px'
     },
     row: {
-      display: 'inline-block'
+      display: 'inline-block',
+      justifyContent: 'center'
     }
 }));
 
