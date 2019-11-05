@@ -75,10 +75,10 @@ const Home = (props) => {
       <br />
   <Container fluid>
     <Row>
-      <Col md={4}>
+      <Col sm='4'>
       <ImageGrid />  
       </Col>
-      <Col md={2}>
+      <Col md='2'>
       <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -124,7 +124,7 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Col>
-    <Col md={2}>
+    <Col md='2'>
 <Card className={classes.card} id='ls'>
       <CardActionArea>
         <CardMedia
@@ -170,7 +170,7 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Col>
-    <Col md={2}>
+    <Col md='2'>
 <Card className={classes.card} id='ka'>
       <CardActionArea>
         <CardMedia
