@@ -143,7 +143,7 @@ const useStyles = makeStyles(theme => ({
       maxWidth: 305,
       maxHeight: 400,
       display: 'inline-block',
-      padding: '15px'
+      margin: '15px'
     },
     media: {
       height: 140,
@@ -264,7 +264,7 @@ const handleClickClose = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button onClick={props.fetchSR} size="small" color="primary">
+        <Button className={classes.button} onClick={props.fetchSR} size="small" color="primary">
           SR20
         </Button>
       </CardActions>
