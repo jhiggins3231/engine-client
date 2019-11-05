@@ -54,6 +54,12 @@ const useStyles = makeStyles(theme => ({
     },
     media: {
         height: 140,
+    },
+    grid: {
+      widht: '500px'
+    },
+    col: {
+      width: '310px'
     }
 }));
 
@@ -75,10 +81,10 @@ const Home = (props) => {
       <br />
   <Container fluid>
     <Row>
-      <Col sm='4'>
+      <Col sm='4' className={classes.grid}>
       <ImageGrid />  
       </Col>
-      <Col md='2'>
+      <Col md='2' className={classes.col}>
       <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -124,7 +130,7 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Col>
-    <Col md='2'>
+    <Col md='2' className={classes.col}>
 <Card className={classes.card} id='ls'>
       <CardActionArea>
         <CardMedia
@@ -170,7 +176,7 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Col>
-    <Col md='2'>
+    <Col md='2' className={classes.col}>
 <Card className={classes.card} id='ka'>
       <CardActionArea>
         <CardMedia
