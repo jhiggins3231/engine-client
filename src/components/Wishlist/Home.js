@@ -392,12 +392,13 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
+
+<ImageGrid />
     
 </Grid>
 </Grid>
 </Grid>
 </div>
-<ImageGrid />
 </Background>
     );
 }
