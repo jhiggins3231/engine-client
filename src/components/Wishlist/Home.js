@@ -90,7 +90,9 @@ const Home = (props) => {
 
     return (
         <Background className="main">
-            
+<div className={classes.ImageGrid}>       
+<ImageGrid />
+
 <div className={classes.row}>
 <Grid spacing={2} container className={classes.root3}>
       <Grid container
@@ -99,7 +101,6 @@ const Home = (props) => {
   alignItems="center"
 >
 <Grid item xs zeroMinWidth>
-<ImageGrid className={ImageGrid} />
   <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -245,6 +246,7 @@ const Home = (props) => {
 </Grid>
 </Grid>
 </Grid>
+</div>
 </div>
 </Background>
     );
