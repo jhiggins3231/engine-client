@@ -88,10 +88,10 @@ const Home = (props) => {
       <br />
   <Container>
     <Row>
-      <Col md={4}>
+      <Col md={3}>
       <ImageGrid />  
       </Col>
-      <Col md={8}>
+      <Col md={7}>
 <Grid spacing={2} container className={classes.root3}>
       <Grid container
   direction="row"
