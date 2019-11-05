@@ -17,8 +17,22 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import Switch from '@material-ui/core/Switch'
 
-
+const PurpleSwitch = withStyles({
+  switchBase: {
+    color: purple[300],
+    '&$checked': {
+      color: purple[500],
+    },
+    '&$checked + $track': {
+      backgroundColor: purple[500],
+      background: '#3993DD'
+    },
+  },
+  checked: {},
+  track: {},
+})(Switch);
 
 
 
@@ -90,7 +104,19 @@ const Home = (props) => {
 
 
     return (
-        <Background className="main">
+      <Background className="main">
+        <FormGroup>
+        <FormControlLabel
+          control={
+            <PurpleSwitch
+              checked={state.checkedA}
+              onChange={handleChange('checkedA')}
+              value="checkedA"
+            />
+          }
+          label="Custom color"
+        />
+        </FormGroup>
 <div className={classes.row}>
 <Grid spacing={2} container className={classes.root3}>      
       <Grid container
