@@ -143,7 +143,8 @@ const useStyles = makeStyles(theme => ({
       maxWidth: 305,
       maxHeight: 400,
       display: 'inline-block',
-      margin: '15px'
+      margin: '8px',
+      border: '1px solid black'
     },
     media: {
       height: 140,
@@ -286,7 +287,7 @@ const handleClickClose = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button onClick={props.fetchJZ} size="small" color="primary">
+        <Button className={classes.button} onClick={props.fetchJZ} size="small" color="primary">
           JZ Wishlist
         </Button>
       </CardActions>
@@ -308,7 +309,7 @@ const handleClickClose = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button onClick={props.fetchLS} size="small" color="primary">
+        <Button onClick={props.fetchLS} className={classes.button} size="small" color="primary">
           LSx Wishlist
         </Button>
       </CardActions>
@@ -330,7 +331,7 @@ const handleClickClose = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button onClick={props.fetchRB} size="small" color="primary">
+        <Button onClick={props.fetchRB} className={classes.button} size="small" color="primary">
           RB Wishlist
         </Button>
       </CardActions>
@@ -352,7 +353,7 @@ const handleClickClose = () => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button onClick={props.fetchKA} size="small" color="primary">
+        <Button onClick={props.fetchKA} className={classes.button} size="small" color="primary">
           KA Wishlist
         </Button>
       </CardActions>
