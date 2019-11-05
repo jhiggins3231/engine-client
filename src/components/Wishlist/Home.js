@@ -62,11 +62,6 @@ const useStyles = makeStyles(theme => ({
         display: 'inline-block',
         padding: '10px',
         justifyContent: 'center'
-    },
-    row: {
-        display: 'inline-block',
-        justifyContent: 'center',
-        width: '960px',
     }
 }));
 
@@ -80,7 +75,7 @@ const Home = (props) => {
 
 
     return (
-      <div className={classes.row}>
+      <div>
       <br />
       <br />
       <br />
@@ -88,18 +83,16 @@ const Home = (props) => {
       <br />
   <Container>
     <Row>
-      <Col md>
+      <Col md={4}>
       <ImageGrid />  
       </Col>
-      <Col md>
-<Grid spacing={2} container className={classes.root3}>
-<Grid item xs zeroMinWidth> 
-  <Card className={classes.card} id='sr'>
+      <Col>
+      <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={sr}
-          title="SR20DET"
+          title="SR"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -138,6 +131,8 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
+    </Col>
+    <Col>
 <Card className={classes.card} id='ls'>
       <CardActionArea>
         <CardMedia
@@ -160,9 +155,6 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-    </Grid>
-    </Grid>
-<Grid item xs zeroMinWidth>
 <Card className={classes.card} id='rb'>
       <CardActionArea>
         <CardMedia
@@ -185,6 +177,8 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
+    </Col>
+    <Col>
 <Card className={classes.card} id='ka'>
       <CardActionArea>
         <CardMedia
@@ -229,10 +223,7 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-</Grid>
-</Grid>
-</Grid>
-</Col>
+    </Col>
 </Row>
 </Container>
 </div>
