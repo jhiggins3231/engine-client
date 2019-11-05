@@ -59,9 +59,15 @@ const useStyles = makeStyles(theme => ({
     },
     root3: {
         flexGrow: 1,
+        display: 'inline-block',
         padding: '10px',
         justifyContent: 'center'
     },
+    row: {
+        display: 'inline-block',
+        justifyContent: 'center',
+        width: '960px',
+    }
 }));
 
 
@@ -74,7 +80,7 @@ const Home = (props) => {
 
 
     return (
-      <div>
+      <div className={classes.row}>
       <br />
       <br />
       <br />
@@ -82,11 +88,12 @@ const Home = (props) => {
       <br />
   <Container>
     <Row>
-      <Col md={4}>
+      <Col md>
       <ImageGrid />  
       </Col>
-      <Col md={8}>
-<Grid spacing={2} className={classes.root3}> 
+      <Col md>
+<Grid spacing={2} container className={classes.root3}>
+<Grid item xs zeroMinWidth> 
   <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -153,6 +160,9 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
+    </Grid>
+    </Grid>
+<Grid item xs zeroMinWidth>
 <Card className={classes.card} id='rb'>
       <CardActionArea>
         <CardMedia
@@ -219,6 +229,8 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
+</Grid>
+</Grid>
 </Grid>
 </Col>
 </Row>
