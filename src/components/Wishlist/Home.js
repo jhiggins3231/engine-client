@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import { useSpring, animated } from 'react-spring/web.cjs';
+import main from '../../MotorAssets/mainPage1.jpg';
 import sr from '../../MotorAssets/sr20.jpg';
 import jz from '../../MotorAssets/2jz.jpg';
 import rb from '../../MotorAssets/rb.jpg';
@@ -355,6 +356,28 @@ const handleClickClose = () => {
       <CardActions>
         <Button onClick={props.fetchKA} className={classes.button} size="small" color="primary">
           KA Wishlist
+        </Button>
+      </CardActions>
+    </Card>
+    <Card className={classes.card} id='ka'>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image={main}
+          title="All"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            All Items
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            A list of all items across each of your wishlist.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button onClick={props.getWishlist} className={classes.button} size="small" color="primary">
+          List All
         </Button>
       </CardActions>
     </Card>
