@@ -142,7 +142,8 @@ const useStyles = makeStyles(theme => ({
     card: {
       maxWidth: 305,
       maxHeight: 400,
-      display: 'inline-block'
+      display: 'inline-block',
+      padding: '15px'
     },
     media: {
       height: 140,
@@ -150,7 +151,7 @@ const useStyles = makeStyles(theme => ({
     root3: {
       flexGrow: 1,
       display: 'inline-block',
-      padding: '15px'
+      padding: '25px'
     },
     row: {
       display: 'inline-block'
