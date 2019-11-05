@@ -50,18 +50,11 @@ const useStyles = makeStyles(theme => ({
     card: {
         maxWidth: 305,
         maxHeight: 400,
-        display: 'inline-block',
         margin: '4px',
         border: '1px solid black'
     },
     media: {
         height: 140,
-    },
-    root3: {
-        flexGrow: 1,
-        display: 'inline-block',
-        padding: '10px',
-        justifyContent: 'center'
     }
 }));
 
