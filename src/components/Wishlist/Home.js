@@ -244,7 +244,7 @@ const handleClickClose = () => {
 <Grid spacing={2} container className={classes.root3}>
       <Grid container
   direction="row"
-  justify="center"
+  justify="space-between"
   alignItems="center"
 >
 <Grid item xs zeroMinWidth>
@@ -267,7 +267,7 @@ const handleClickClose = () => {
       </CardActionArea>
       <CardActions>
         <Button className={classes.button} onClick={props.fetchSR} size="small" color="primary">
-          SR20
+          Wishlist
         </Button>
       </CardActions>
     </Card>
@@ -289,7 +289,7 @@ const handleClickClose = () => {
       </CardActionArea>
       <CardActions>
         <Button className={classes.button} onClick={props.fetchJZ} size="small" color="primary">
-          JZ Wishlist
+          Wishlist
         </Button>
       </CardActions>
     </Card>
@@ -311,7 +311,7 @@ const handleClickClose = () => {
       </CardActionArea>
       <CardActions>
         <Button onClick={props.fetchLS} className={classes.button} size="small" color="primary">
-          LSx Wishlist
+          Wishlist
         </Button>
       </CardActions>
     </Card>
@@ -319,7 +319,7 @@ const handleClickClose = () => {
     </Grid>
     <Grid container
   direction="row"
-  justify="center"
+  justify="space-between"
   alignItems="center"
 >
 <Grid item xs zeroMinWidth>
@@ -341,7 +341,7 @@ const handleClickClose = () => {
       </CardActionArea>
       <CardActions>
         <Button onClick={props.fetchRB} className={classes.button} size="small" color="primary">
-          RB Wishlist
+          Wishlist
         </Button>
       </CardActions>
     </Card>
@@ -363,7 +363,7 @@ const handleClickClose = () => {
       </CardActionArea>
       <CardActions>
         <Button onClick={props.fetchKA} className={classes.button} size="small" color="primary">
-          KA Wishlist
+          Wishlist
         </Button>
       </CardActions>
     </Card>
