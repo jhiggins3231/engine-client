@@ -143,7 +143,7 @@ const useStyles = makeStyles(theme => ({
       maxWidth: 305,
       maxHeight: 400,
       display: 'inline-block',
-      margin: '8px',
+      margin: '4px',
       border: '1px solid black'
     },
     media: {
@@ -152,7 +152,7 @@ const useStyles = makeStyles(theme => ({
     root3: {
       flexGrow: 1,
       display: 'inline-block',
-      padding: '25px'
+      padding: '10px'
     },
     row: {
       display: 'inline-block'
