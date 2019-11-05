@@ -150,6 +150,10 @@ const useStyles = makeStyles(theme => ({
       flexGrow: 1,
       display: inline-block
     },
+    row: {
+      wrap: no-wrap,
+      display: inline-block 
+    }
 }));
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -232,7 +236,7 @@ const handleClickClose = () => {
                     </div>
             </Dialog>
             </div>
-<div className={classes.row} style={{"white-space": "nowrap"}}>
+<div className={classes.row}>
 <Grid spacing={1} container className={classes.root}>
       <Grid container
   direction="row"
