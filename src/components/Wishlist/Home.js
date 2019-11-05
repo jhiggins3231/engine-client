@@ -73,13 +73,12 @@ const Home = (props) => {
 
 
     return (
-      <div>
+      <Container fluid>
       <br />
       <br />
       <br />
       <br />
       <br />
-  <Container fluid>
     <Row>
       <Col className={classes.grid}>
       <ImageGrid />  
@@ -224,7 +223,6 @@ const Home = (props) => {
     </Col>
 </Row>
 </Container>
-</div>
     );
 }
 export default Home;
