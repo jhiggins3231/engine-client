@@ -52,6 +52,8 @@ function HideOnScroll(props) {
 
 const Navbar = (props) => {
   return(
+    <React.Fragment>
+    <CssBaseline />
     <HideOnScroll {...props}>
       <AppBar className='Appbar' position="static">
         <Nav className='Toolbar'>
@@ -70,6 +72,7 @@ const Navbar = (props) => {
         </Nav>
       </AppBar>
       </HideOnScroll>
+      </React.Fragment>
   )
 }
 
