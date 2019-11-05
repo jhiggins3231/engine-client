@@ -80,13 +80,13 @@ const Home = (props) => {
 
 
     return (
+      <div className={classes.row}>
       <br />
       <br />
       <br />
       <br />
       <br />
-<div className={classes.row}>
-  <container>
+  <Container>
     <row>
       <col md={4}>
       <ImageGrid />  
@@ -246,7 +246,7 @@ const Home = (props) => {
 </Grid>
 </col>
 </row>
-</container>
+</Container>
 </div>
     );
 }
