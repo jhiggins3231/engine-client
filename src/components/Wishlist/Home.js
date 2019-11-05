@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './Home.css';
 import ImageGrid from './ImageGrid';
-import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import main from '../../MotorAssets/mainPage1.jpg';
@@ -79,7 +78,7 @@ const Home = (props) => {
       <Col md={4}>
       <ImageGrid />  
       </Col>
-      <Col>
+      <Col md={2}>
       <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -125,7 +124,7 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Col>
-    <Col>
+    <Col md={2}>
 <Card className={classes.card} id='ls'>
       <CardActionArea>
         <CardMedia
@@ -171,7 +170,7 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Col>
-    <Col>
+    <Col md={2}>
 <Card className={classes.card} id='ka'>
       <CardActionArea>
         <CardMedia
