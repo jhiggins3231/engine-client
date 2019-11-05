@@ -4,7 +4,6 @@ import ImageGrid from './ImageGrid';
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import { useSpring, animated } from 'react-spring/web.cjs';
 import main from '../../MotorAssets/mainPage1.jpg';
 import sr from '../../MotorAssets/sr20.jpg';
 import jz from '../../MotorAssets/2jz.jpg';
@@ -124,7 +123,17 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-return (
+
+
+const Home = (props) => {
+    const classes = useStyles();
+    
+    
+
+
+
+
+    return (
         <Background className="main">
             
 <div className={classes.row}>
@@ -277,13 +286,13 @@ return (
       </CardActions>
     </Card>
 
+<ImageGrid />
     
 </Grid>
 </Grid>
-<ImageGrid />
 </Grid>
 </div>
 </Background>
     );
-
+}
 export default Home;
