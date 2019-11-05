@@ -9,9 +9,3 @@
     src: url('../../MotorAssets/Bangers-Regular.ttf')
   }
 
-ImageGrid {
-    position: absolute;
-    right: 25%;
-    top: 25%;
-    transform: translate(-75%, -75%)
-  }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Home.css';
 import ImageGrid from './ImageGrid';
 import styled from 'styled-components';
@@ -16,8 +16,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Slide from '@material-ui/core/Slide';
-
 import Grid from '@material-ui/core/Grid';
 
 
