@@ -236,13 +236,13 @@ const handleClickClose = () => {
             </Dialog>
             </div>
 <div className={classes.row}>
-<Grid spacing={1} container className={classes.root3}>
+<Grid spacing={2} container className={classes.root3}>
       <Grid container
   direction="row"
   justify="center"
   alignItems="center"
 >
-<Grid item xs={12}>
+<Grid item xs zeroMinWidth>
 
   <Card className={classes.card} id='sr'>
       <CardActionArea>
