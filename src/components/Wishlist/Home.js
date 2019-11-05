@@ -25,7 +25,7 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
-// import Items from './Items';
+
 const Fade = React.forwardRef(function Fade(props, ref) {
     const { in: open, children, onEnter, onExited, ...other } = props;
     const style = useSpring({
@@ -42,15 +42,12 @@ const Fade = React.forwardRef(function Fade(props, ref) {
         }
       },
     });
-  
     return (
       <animated.div ref={ref} style={style} {...other}>
         {children}
       </animated.div>
     );
   });
-
-
 
 const Para = styled.p`
     text-align: center;

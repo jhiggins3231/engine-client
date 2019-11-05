@@ -77,11 +77,11 @@ const Wishlists = (props) => {
     const [transition, setTransition] = useState(undefined);
     const [transition2, setTransition2] = useState(undefined);
     const [transition3, setTransition3] = useState(undefined);
-
+// Function for the slide in right for the CRUD.
     function TransitionRight(props) {
         return <Slide {...props} direction="right" />;
       }
-
+//Handleclicks for the sliders for create, update, delete
     const handleClick = Transition => () => {
         setTransition(() => Transition);
         setOpen(true);
@@ -94,6 +94,8 @@ const Wishlists = (props) => {
         setTransition3(() => Transition3);
         setOpen7(true);
       };
+
+//Functions for the close of the sliders.
       const handleClose1 = () => {
         setOpen(false);
       };
@@ -103,7 +105,7 @@ const Wishlists = (props) => {
       const handleClose3 = () => {
         setOpen7(false);
       };
-
+//Functions for the opening of the modals on click
     const handleOpen1 = () => {
       setOpen1(true);
     };
@@ -119,7 +121,7 @@ const Wishlists = (props) => {
     const handleOpen5 = () => {
       setOpen5(true);
     };
-  
+//Function for the closing of the Modals on exit
     const handleClose = () => {
         setOpen1(false);
         setOpen2(false);
@@ -145,7 +147,7 @@ const Wishlists = (props) => {
         .then(handleChange)
         .catch(err => console.log(err))
     }, [])
-
+//Fetches wishlist based on user id
 const fetchWishlist = () => {
     fetch(`${APIURL}/wishlist`, {
             method: 'GET',
@@ -158,6 +160,7 @@ const fetchWishlist = () => {
         .then(json => setWishlist(json))
         .catch(err => console.log(err))
 }
+//Fethches wishlist based on user id and motor name. 
 const fetchSR = () => {
     fetch(`${APIURL}/wishlist/sr20`, {
             method: 'GET',
@@ -172,6 +175,7 @@ const fetchSR = () => {
         .then(handleChange)
         .catch(err => console.log(err))
 }
+//Fethches wishlist based on user id and motor name. 
 const fetchJZ = () => {
     fetch(`${APIURL}/wishlist/JZ`, {
             method: 'GET',
@@ -186,6 +190,7 @@ const fetchJZ = () => {
         .then(handleChange)
         .catch(err => console.log(err))
 }
+//Fethches wishlist based on user id and motor name. 
 const fetchLS = () => {
     fetch(`${APIURL}/wishlist/LS`, {
             method: 'GET',
@@ -200,6 +205,7 @@ const fetchLS = () => {
         .then(handleChange)
         .catch(err => console.log(err))
 }
+//Fethches wishlist based on user id and motor name. 
 const fetchRB = () => {
     fetch(`${APIURL}/wishlist/RB`, {
             method: 'GET',
@@ -214,6 +220,7 @@ const fetchRB = () => {
         .then(handleChange)
         .catch(err => console.log(err))
 }
+//Fethches wishlist based on user id and motor name. 
 const fetchKA = () => {
     fetch(`${APIURL}/wishlist/KA`, {
             method: 'GET',
@@ -228,8 +235,8 @@ const fetchKA = () => {
         .then(handleChange)
         .catch(err => console.log(err))
 }
-
-    const postWishlist = (e) => {
+//Function for adding an item to the wishlist
+const postWishlist = (e) => {
         e.preventDefault();
         const wishlistObj = {
             itemName: itemName,
@@ -262,8 +269,8 @@ const fetchKA = () => {
         .catch(err => console.log(err))
     }
     
-
-    const deleteWishlist = (e) => {
+//Function for deleting an item by id
+const deleteWishlist = (e) => {
         e.preventDefault();
         fetch(`${APIURL}/wishlist/${id}`, {
             method: 'DELETE',
@@ -287,8 +294,8 @@ const fetchKA = () => {
         .then (fetchWishlist())
         .catch(err => console.log(err))
     }
-    
-    const updateWishlist = () => {
+//Function for updating an item by id    
+const updateWishlist = () => {
         const updateWishlist= {
             itemName: itemName,
             quantity: quantity,
@@ -326,7 +333,9 @@ const fetchKA = () => {
      
         <Background className='table'>
             <div className='ViewTwo'>
+// All of the props being passed down to the Home file.
             <Home getWishlist={fetchWishlist} fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} handleClose={handleClose} open1={open1} open2={open2} open3={open3} open4={open4} open5={open5} />
+// All of the props being passed down and used in the ViewTwo file
             <ViewTwo open={open} open6={open6} open7={open7} transition={transition} transition2={transition2} transition3={transition3} handleClose1={handleClose1} handleClose2={handleClose2} handleClose3={handleClose3} handleClick={handleClick} post={postWishlist} delete={deleteWishlist} update={updateWishlist} itemName={itemName} name={setItemName} quantityName={quantity} quantity={setQuantity} price={setPrice} priceName={price} location={setLocation} locationName={location} motor={setMotorName} motorName={motorName} id={id} itemId={setItemId}  />
             </div>
             <div className="Home">
@@ -350,7 +359,6 @@ const fetchKA = () => {
                         <StyledTableCell component="th" scope="row">
                             {row.itemName}
                         </StyledTableCell>
-                        {/* <StyledTableCell align='center'>{row.itemName}</StyledTableCell> */}
                         <StyledTableCell align="left">{row.location}</StyledTableCell>
                         <StyledTableCell align="left">{row.quantity}</StyledTableCell>
                         <StyledTableCell align="left">{row.price}</StyledTableCell>
@@ -362,12 +370,6 @@ const fetchKA = () => {
                 </Table>
             </Paper>
             </Slide>
-            {/* // <table className="Table">
-            //     <tbody>
-            //     {WishlistRows()}
-            //     </tbody>
-            // </table> */}
-            
         </Background>
     )
 }
