@@ -71,7 +71,6 @@ const Background = styled.div`
 const useStyles = makeStyles(theme => ({
     button: {
       width: '100px',
-      margin: theme.spacing(2),
       backgroundColor: '#B2B2B2',
       color: '#FFFFFF',
       fontFamily: 'Playfair',
@@ -147,7 +146,7 @@ const useStyles = makeStyles(theme => ({
     media: {
       height: 140,
     },
-    root: {
+    root3: {
       flexGrow: 1,
       display: 'inline-block'
     },
@@ -237,7 +236,7 @@ const handleClickClose = () => {
             </Dialog>
             </div>
 <div className={classes.row}>
-<Grid spacing={1} container className={classes.root}>
+<Grid spacing={1} container className={classes.root3}>
       <Grid container
   direction="row"
   justify="center"
@@ -311,6 +310,14 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
+    </Grid>
+    <Grid spacing={1} container className={classes.root3}>
+      <Grid container
+  direction="row"
+  justify="center"
+  alignItems="center"
+>
+<Grid item xs={12}></Grid>
 <Card className={classes.card} id='rb'>
       <CardActionArea>
         <CardMedia
