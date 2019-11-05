@@ -18,6 +18,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
+import { Container, Row, Col } from 'reactstrap';
 
 
 
@@ -87,13 +88,11 @@ const Home = (props) => {
       <br />
       <br />
   <Container>
-    <row>
-      <col md={4}>
+    <Row>
+      <Col md={4}>
       <ImageGrid />  
-      </col>
-      </row>
-    <row>
-      <col md={8}>
+      </Col>
+      <Col md={8}>
 <Grid spacing={2} container className={classes.root3}>
       <Grid container
   direction="row"
@@ -244,8 +243,8 @@ const Home = (props) => {
 </Grid>
 </Grid>
 </Grid>
-</col>
-</row>
+</Col>
+</Row>
 </Container>
 </div>
     );
