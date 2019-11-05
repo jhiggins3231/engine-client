@@ -16,7 +16,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import { Container, Row, Col } from 'reactstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -73,7 +75,7 @@ const Home = (props) => {
       <br />
       <br />
       <br />
-  <Container>
+  <Container fluid>
     <Row>
       <Col md={4}>
       <ImageGrid />  
