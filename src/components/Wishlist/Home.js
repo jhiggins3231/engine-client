@@ -142,6 +142,7 @@ const useStyles = makeStyles(theme => ({
     },
     card: {
       maxWidth: 345,
+      display: 'inline-block'
     },
     media: {
       height: 140,
