@@ -148,11 +148,10 @@ const useStyles = makeStyles(theme => ({
     },
     root: {
       flexGrow: 1,
-      display: inline-block
+      display: 'inline-block'
     },
     row: {
-      wrap: no-wrap,
-      display: inline-block 
+      display: 'inline-block' 
     }
 }));
 
