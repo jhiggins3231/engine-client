@@ -93,11 +93,6 @@ const Home = (props) => {
       </Col>
       <Col md>
 <Grid spacing={2} container className={classes.root3}>
-      <Grid container
-  direction="row"
-  justify="space-between"
-  alignItems="center"
->
 <Grid item xs zeroMinWidth> 
   <Card className={classes.card} id='sr'>
       <CardActionArea>
@@ -166,12 +161,6 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Grid>
-    </Grid>
-    <Grid container
-  direction="row"
-  justify="space-between"
-  alignItems="center"
->
 <Grid item xs zeroMinWidth>
 <Card className={classes.card} id='rb'>
       <CardActionArea>
@@ -239,7 +228,6 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-</Grid>
 </Grid>
 </Grid>
 </Col>
