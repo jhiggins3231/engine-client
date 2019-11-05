@@ -39,10 +39,10 @@ const PurpleSwitch = withStyles({
 
 
 
-// const Background = styled.div`
-//     padding: (0, 0, 0 , 0);
-//     background: #FFFFFF
-// `;
+const Background = styled.div`
+    padding: (0, 0, 0 , 0);
+    background: #FFFFFF
+`;
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -65,33 +65,32 @@ const useStyles = makeStyles(theme => ({
           marginLeft: theme.spacing(2),
           flex: 1,
           width: '100%',
-          fontFamily: 'Playfair'
-          
+          fontFamily: 'Playfair' 
     },
     card: {
-      maxWidth: 305,
-      maxHeight: 400,
-      display: 'inline-block',
-      margin: '4px',
-      border: '1px solid black'
+        maxWidth: 305,
+        maxHeight: 400,
+        display: 'inline-block',
+        margin: '4px',
+        border: '1px solid black'
     },
     media: {
-      height: 140,
+        height: 140,
     },
     root3: {
-      flexGrow: 1,
-      display: 'inline-block',
-      padding: '10px',
-      justifyContent: 'center'
+        flexGrow: 1,
+        display: 'inline-block',
+        padding: '10px',
+        justifyContent: 'center'
     },
     row: {
-      display: 'inline-block',
-      justifyContent: 'center',
-      width: '960px'
+        display: 'inline-block',
+        justifyContent: 'center',
+        width: '960px'
     },
     ImageGrid: {
-      width: '500px',
-      right: '10%'
+        width: '500px',
+        right: '10%'
     }
 }));
 
@@ -112,6 +111,10 @@ const Home = (props) => {
 
     return (
       <Background className="main">
+        <br />
+        <br />
+        <br />
+        <br />
         <FormGroup>
         <FormControlLabel
           control={
