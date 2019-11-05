@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import tileData from './tileData';
+
 import tile1 from '../../MotorAssets/tile1.jpg';
 import tile2 from '../../MotorAssets/tile2.jpg';
 import tile3 from '../../MotorAssets/tile3.jpg';
