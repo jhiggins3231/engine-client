@@ -39,10 +39,10 @@ const PurpleSwitch = withStyles({
 
 
 
-const Background = styled.div`
-    padding: (0, 0, 0 , 0);
-    background: #FFFFFF
-`;
+// const Background = styled.div`
+//     padding: (0, 0, 0 , 0);
+//     background: #FFFFFF
+// `;
 
 const useStyles = makeStyles(theme => ({
     button: {
