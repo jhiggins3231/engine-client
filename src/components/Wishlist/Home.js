@@ -285,5 +285,5 @@ return (
 </div>
 </Background>
     );
-}
+
 export default Home;
