@@ -68,15 +68,6 @@ const Background = styled.div`
     background: #FFFFFF
 `;
 
-const Motors = styled.div`
-    position: relative;
-    width: 800px;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    `;
-
-
 const useStyles = makeStyles(theme => ({
     button: {
       width: '100px',
@@ -152,13 +143,19 @@ const useStyles = makeStyles(theme => ({
     card: {
       maxWidth: 345,
     },
-    card2: {
-      maxWidth: 345,
-      left: '20%',
-    },
     media: {
       height: 140,
-    }
+    },
+    root: {
+      flexGrow: 1,
+    },
+    paper: {
+      height: 140,
+      width: 100,
+    },
+    control: {
+      padding: theme.spacing(2),
+    },
 }));
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -240,13 +237,13 @@ const handleClickClose = () => {
                     </div>
             </Dialog>
             </div>
-            <div className="mainDiv">
-<Grid spacing={1} container
+<Grid spacing={1} container className={classes.root}>
+      <Grid container
   direction="row"
   justify="center"
   alignItems="center"
 >
-  <Grid item xs={12}>
+<Grid item xs={12}>
   <Card className={classes.card}>
       <CardActionArea>
         <CardMedia
@@ -291,7 +288,7 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-<Card className={classes.card2}>
+<Card className={classes.card}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -359,7 +356,7 @@ const handleClickClose = () => {
     </Card>
 </Grid>
 </Grid>
-    </div> 
+</Grid>
 </Background>
     );
 }
