@@ -74,7 +74,7 @@ const useStyles = makeStyles(theme => ({
     },
     ImageGrid: {
       display: 'inline-block',
-      justifyContent: 'right'
+      alignSelf: 'right'
     }
 }));
 
@@ -99,7 +99,7 @@ const Home = (props) => {
   alignItems="center"
 >
 <Grid item xs zeroMinWidth>
-
+<ImageGrid className={ImageGrid} />
   <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -244,7 +244,6 @@ const Home = (props) => {
     
 </Grid>
 </Grid>
-<ImageGrid className={ImageGrid} />
 </Grid>
 </div>
 </Background>
