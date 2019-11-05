@@ -4,7 +4,6 @@ import ImageGrid from './ImageGrid';
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import { withStyles } from '@material-ui/core/styles';
 import main from '../../MotorAssets/mainPage1.jpg';
 import sr from '../../MotorAssets/sr20.jpg';
 import jz from '../../MotorAssets/2jz.jpg';
@@ -18,9 +17,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Switch from '@material-ui/core/Switch';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+
 
 
 
@@ -68,16 +65,13 @@ const useStyles = makeStyles(theme => ({
     row: {
         display: 'inline-block',
         justifyContent: 'center',
-        width: '960px'
+        width: '960px',
+        backgroundColor: 'red'
     },
     ImageGrid: {
         width: '500px',
-        right: '10%'
-    },
-    switch: {
-        left: '50%',
-        top: '50%',
-        transform: 'translate (-50%, -50%)'
+        right: '10%',
+        backgroundColor: 'black'
     }
 }));
 
