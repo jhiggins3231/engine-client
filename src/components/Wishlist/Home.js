@@ -396,8 +396,8 @@ const handleClickClose = () => {
 </Grid>
 </Grid>
 </Grid>
-<ImageGrid />
 </div>
+<ImageGrid />
 </Background>
     );
 }

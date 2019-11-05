@@ -31,7 +31,7 @@ const tileData = [
     {
         img: tile1,
         title: 'Image',
-        cols: 2,
+        cols: 3,
     },
     {
         img: tile2,
@@ -41,7 +41,7 @@ const tileData = [
     {
         img: tile3,
         title: 'Image',
-        cols: 2,
+        cols: 1,
     },
     {
         img: tile4,
@@ -51,12 +51,12 @@ const tileData = [
     {
         img: tile5,
         title: 'Image',
-        cols: 2,
+        cols: 3,
     },
     {
         img: tile6,
         title: 'Image',
-        cols: 2,
+        cols: 3,
     },
     {
         img: tile7,
@@ -66,12 +66,12 @@ const tileData = [
     {
         img: tile8,
         title: 'Image',
-        cols: 2,
+        cols: 1,
     },
     {
         img: tile9,
         title: 'Image',
-        cols: 2,
+        cols: 3,
     },
 ]
 
