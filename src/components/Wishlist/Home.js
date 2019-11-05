@@ -158,7 +158,6 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-    </Grid>
 <Card className={classes.card} id='rb'>
       <CardActionArea>
         <CardMedia
@@ -225,7 +224,6 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-</Grid>
 </Grid>
 </Col>
 </Row>
