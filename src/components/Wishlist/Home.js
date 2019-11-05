@@ -310,16 +310,6 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-    </Grid>
-    </Grid>
-    </Grid>
-    <Grid spacing={1} container className={classes.root3}>
-      <Grid container
-  direction="row"
-  justify="center"
-  alignItems="center"
->
-<Grid item xs={12}>
 <Card className={classes.card} id='rb'>
       <CardActionArea>
         <CardMedia
