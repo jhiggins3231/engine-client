@@ -16,55 +16,16 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Dialog from '@material-ui/core/Dialog';
-import Divider from '@material-ui/core/Divider';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 import Grid from '@material-ui/core/Grid';
 
 
 
-const Fade = React.forwardRef(function Fade(props, ref) {
-    const { in: open, children, onEnter, onExited, ...other } = props;
-    const style = useSpring({
-      from: { opacity: 0 },
-      to: { opacity: open ? 1 : 0 },
-      onStart: () => {
-        if (open && onEnter) {
-          onEnter();
-        }
-      },
-      onRest: () => {
-        if (!open && onExited) {
-          onExited();
-        }
-      },
-    });
-    return (
-      <animated.div ref={ref} style={style} {...other}>
-        {children}
-      </animated.div>
-    );
-  });
 
-const Para = styled.p`
-    text-align: center;
-    font-family: Varela;
-    font-size: 1em;
-    font-weight: 500;
-    justify-content: center;
-    width: 460px;
-    margin-left: 50%;
-    transform: translate(-50%)
-`;
+
+
 const Background = styled.div`
     padding: (0, 0, 0 , 0);
     background: #FFFFFF
@@ -163,86 +124,9 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction="down" ref={ref} {...props} />;
-  });
-
-
-const Home = (props) => {
-    const classes = useStyles();
-    const [open, setOpen] = useState('false');
-    
-    
-
-const handleClickOpen = () => {
-    setOpen(true);
-};
-const handleClickClose = () => {
-    setOpen(false);
-};
-
-
-
-    return (
+return (
         <Background className="main">
-            <div className={classes.root1}>
-            <Button variant='outlined' onClick={handleClickOpen} className={classes.introButton}>
-                Welcome!
-            </Button>
-            <Dialog fullscreen open={open} onClose={handleClickClose} TransitionComponent={Transition}>
-                <AppBar className={classes.appBar}>
-                    <Toolbar>
-                        <IconButton edge="start" color="inherit" onClick={handleClickClose} aria-label="close">
-                            <CloseIcon className={classes.close}/>
-                        </IconButton>
-                        <Typography variant="h6" className={classes.title}>
-                            Helpful Notes
-                        </Typography>
-                    </Toolbar>
-                </AppBar>
-                <div className={classes.root}>
-                <ExpansionPanel className={classes.panel}>
-                    <ExpansionPanelSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls='panl1a-content'
-                        id='panel1a-header'>
-                            <Typography className={classes.heading}>Intoduction</Typography>
-                        </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <Typography className={classes.details}>
-                        <Para>This app is intended to be a helpful tool to track and price out items you'd like to buy. Instead of having a singular store website wishlist. Here you can add different items from different web stores and track the total cost of your build. With this app you're also able to build and view different wishlist based on 5 common 240sx motor swaps. Those swaps include SR20, KA24, LSx, RB20/25/26, and 1/2JZ. </Para>
-                        </Typography>
-                    </ExpansionPanelDetails>
-                    </ExpansionPanel>
-                    <Divider />
-                    <ExpansionPanel className={classes.panel}>
-                    <ExpansionPanelSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls='panl2a-content'
-                        id='panel2a-header'>
-                            <Typography className={classes.heading}>Helpful Notes</Typography>
-                        </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                        <Typography className={classes.details}>
-                        <Para>
-                    <li>Currently this feature does not distinguish between motor variants. I.E. 1JZ or 2JZ. If you'd like to distinguish between variants you may insert the specific motor name in the Item name field. </li>
-                    <li>You have the ability to create, update, and delete items from your wishlist. In order to delete or update an item just grab the Item ID and enter it into the Item ID field.</li>
-                    <li>Each button is intended to take you to different engine wishlist as well as show you an image of the selected motor.  Allowing you to have an image for inspiration and to create multiple wishlist.</li>
-                    <li>Item ID is not needed unless you are updating or deleting an item in the table.</li>
-                        </Para>
-                        </Typography>
-                    </ExpansionPanelDetails>
-                    </ExpansionPanel>
-                    <ExpansionPanel disabled>
-                    <ExpansionPanelSummary
-                        aria-controls='panl3a-content'
-                        id='panel3a-header'>
-                            <Typography>Thanks For Visiting!</Typography>
-                        </ExpansionPanelSummary>
-                        </ExpansionPanel>
-                    </div>
-            </Dialog>
-            </div>
+            
 <div className={classes.row}>
 <Grid spacing={2} container className={classes.root3}>
       <Grid container
@@ -393,10 +277,10 @@ const handleClickClose = () => {
       </CardActions>
     </Card>
 
-<ImageGrid />
     
 </Grid>
 </Grid>
+<ImageGrid />
 </Grid>
 </div>
 </Background>
