@@ -62,12 +62,12 @@ const tileData = [
     {
         img: tile7,
         title: 'Image',
-        cols: 2,
+        cols: 1,
     },
     {
         img: tile8,
         title: 'Image',
-        cols: 1,
+        cols: 2,
     },
     {
         img: tile9,
