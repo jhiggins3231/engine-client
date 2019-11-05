@@ -86,6 +86,7 @@ const Home = (props) => {
       <ImageGrid />  
       </Col>
       <Col md={8}>
+<Grid spacing={2} className={classes.root3}> 
   <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -218,6 +219,7 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
+</Grid>
 </Col>
 </Row>
 </Container>

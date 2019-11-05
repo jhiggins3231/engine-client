@@ -15,8 +15,6 @@ import tile9 from '../../MotorAssets/tile9.jpg';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
     width: 550,
     justifyContent: 'space-around',
     overflow: 'hidden',
