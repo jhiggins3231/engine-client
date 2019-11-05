@@ -79,21 +79,27 @@ const Home = (props) => {
 
 
     return (
-      <div>
-        <br />
-        <br />
-        <br />
-        <br />
-        
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 <div className={classes.row}>
+  <container>
+    <row>
+      <col md={4}>
+      <ImageGrid />  
+      </col>
+      </row>
+    <row>
+      <col md={8}>
 <Grid spacing={2} container className={classes.root3}>
       <Grid container
   direction="row"
   justify="space-between"
   alignItems="center"
 >
-<Grid item xs zeroMinWidth>
-<ImageGrid />   
+<Grid item xs zeroMinWidth> 
   <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -237,8 +243,9 @@ const Home = (props) => {
 </Grid>
 </Grid>
 </Grid>
-</div>
-
+</col>
+</row>
+</container>
 </div>
     );
 }
