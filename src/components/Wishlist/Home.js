@@ -70,11 +70,14 @@ const useStyles = makeStyles(theme => ({
     },
     row: {
       display: 'inline-block',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      width: '960px'
     },
     ImageGrid: {
       display: 'inline-block',
-      alignSelf: 'right'
+      alignSelf: 'right',
+      width: '500px',
+      left: '80%'
     }
 }));
 
@@ -92,7 +95,6 @@ const Home = (props) => {
         <Background className="main">
 <div className={classes.row}>
 <Grid spacing={2} container className={classes.root3}>      
-<ImageGrid />
       <Grid container
   direction="row"
   justify="space-between"
@@ -242,6 +244,9 @@ const Home = (props) => {
 </Grid>
 </Grid>
 </Grid>
+</div>
+<div className={ImageGrid}>
+<ImageGrid />
 </div>
 </Background>
     );
