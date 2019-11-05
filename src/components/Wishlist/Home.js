@@ -24,7 +24,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const PurpleSwitch = withStyles({
   switchBase: {
-    color: purple[300],
+    color: 'purple',
     '&$checked': {
       background: '#FFFFFF',
     },
