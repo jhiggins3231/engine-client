@@ -121,7 +121,7 @@ const Home = (props) => {
               value="checkedA"
             />
           }
-          label="Custom color"
+          label="Background Switch"
         />
         </FormGroup>
 <div className={classes.row}>
