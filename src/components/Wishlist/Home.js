@@ -148,6 +148,7 @@ const useStyles = makeStyles(theme => ({
     },
     root: {
       flexGrow: 1,
+      display: inline-block
     },
 }));
 
@@ -168,6 +169,7 @@ const handleClickOpen = () => {
 const handleClickClose = () => {
     setOpen(false);
 };
+
 
 
     return (
@@ -230,7 +232,7 @@ const handleClickClose = () => {
                     </div>
             </Dialog>
             </div>
-
+<div className={classes.row} style={{"white-space": "nowrap"}}>
 <Grid spacing={1} container className={classes.root}>
       <Grid container
   direction="row"
@@ -238,8 +240,8 @@ const handleClickClose = () => {
   alignItems="center"
 >
 <Grid item xs={12}>
-<CardGroup>
-  <Card className={classes.card}>
+
+  <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -261,7 +263,7 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-<Card className={classes.card}>
+<Card className={classes.card} id='jz'>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -283,7 +285,7 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-<Card className={classes.card}>
+<Card className={classes.card} id='ls'>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -305,7 +307,7 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-<Card className={classes.card}>
+<Card className={classes.card} id='rb'>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -327,7 +329,7 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-<Card className={classes.card}>
+<Card className={classes.card} id='ka'>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -349,10 +351,11 @@ const handleClickClose = () => {
         </Button>
       </CardActions>
     </Card>
-    </CardGroup>
+    
 </Grid>
 </Grid>
 </Grid>
+</div>
 </Background>
     );
 }
