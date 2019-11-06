@@ -74,9 +74,9 @@ const useStyles = makeStyles(theme => ({
     },
     input: {
         margin: theme.spacing(1),
-        color: '#FFFFFF',
+        color: '#F2F4F3',
         background: '#22333b',
-        border: '2px solid #a9927d',
+        border: '3px solid #a9927d',
         borderRadius: '5px',
         height: '50px',
         marginLeft: '50px',
@@ -84,7 +84,8 @@ const useStyles = makeStyles(theme => ({
     },
     input2: {
       margin: theme.spacing(1),
-      border: '2px solid #a9927d',
+      border: '3px solid #a9927d',
+      color: '#22333B',
       borderRadius: '5px',
       height: '50px',
       marginLeft: '50px',
@@ -94,9 +95,11 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: '#22333b',
         margin: theme.spacing(1),
         left: '35%',
-        top: '50%',
-        
+        top: '50%',   
     },
+    motorSelect: {
+      border: '3px solid #A9927D',
+    }
 }));
 
 export default function Inputs(props) {
@@ -147,7 +150,7 @@ export default function Inputs(props) {
         <br />
         <br />
         </div>
-        <Selector className='motorSelect'>
+        <Selector className={classes.motorSelect}>
         <TextField
             id="outlined-select-motor"
             select
