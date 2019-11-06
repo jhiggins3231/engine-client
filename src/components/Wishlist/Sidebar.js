@@ -4,7 +4,6 @@ import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import { textAlign } from '@material-ui/system';
 
 
 const drawerWidth = 240;
@@ -32,11 +31,10 @@ const useStyles = makeStyles(theme => ({
     width: '100px',
     height: '50px',
     backgroundColor: '#B2B2B2',
-    color: '#FFFFFF',
+    color: '#F2f4f3',
     fontFamily: 'Playfair',
-    borderRadius: '10px',
-    marginTop: '20px',
-    left: '10%'
+    borderRadius: '5px',
+    padding: '5px'
   },
   header: {
     fontFamily: 'Playfair',
@@ -50,11 +48,19 @@ export default function PermanentDrawerRight(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Drawer>
+      <Drawer
+        className={classes.drawer}
+        variant="permanent"
+        classes={{
+          paper: classes.drawerPaper,
+        }}
+        anchor="right"
+      >
+        <div className={classes.toolbar} />
         <h3 className={classes.header}>Exhaust Videos for Eargasms!</h3>
         <Divider />
         <List>
-          <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=sr20det+exhaust")}>SR20DET</button></li>
+          <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+sr20+exhaust")}>SR20DET</button></li>
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+jz+exhaust")}>1/2JZ</button></li>   
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+ls+exhaust")}>LSx</button></li>
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+rb+exhaust")}>RB20/25/26</button></li>
