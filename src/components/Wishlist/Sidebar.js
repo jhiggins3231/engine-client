@@ -34,7 +34,8 @@ const useStyles = makeStyles(theme => ({
     color: '#F2f4f3',
     fontFamily: 'Playfair',
     borderRadius: '5px',
-    padding: '5px'
+    padding: '5px',
+    marginTop: '20px'
   },
   header: {
     fontFamily: 'Playfair',
