@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function PermanentDrawerRight() {
+export default function PermanentDrawerRight(props) {
   const classes = useStyles();
 
   return (
@@ -53,11 +53,11 @@ export default function PermanentDrawerRight() {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          {['SR20DET', '1/2JZ', 'LSx', 'RB20/25/26', 'KA24DE/T'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
+          <li button onClick={fetchSR}>SR20DET</li>
+          <li button onClick={fetchJZ}>1/2JZ</li>   
+          <li button onClick={fetchLS}>LSx</li>
+          <li button onClick={fetchRB}>RB20/25/26</li>
+          <li button onCLick={fetchKA}>KA24DE/T</li>
           ))}
         </List>
       </Drawer>

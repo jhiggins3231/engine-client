@@ -66,11 +66,6 @@ const Wishlists = (props) => {
     const [motorName, setMotorName] = useState('');
     const [id, setItemId] = useState('');
     const [wishlist, setWishlist] = useState([]);
-    const [open1, setOpen1] = useState(false);
-    const [open2, setOpen2] = useState(false);
-    const [open3, setOpen3] = useState(false);
-    const [open4, setOpen4] = useState(false);
-    const [open5, setOpen5] = useState(false);
     const [checked, setChecked] = useState();
     const [open, setOpen] = useState(false);
     const [open6, setOpen6] = useState(false);
@@ -107,29 +102,6 @@ const handleClose1 = () => {
         setOpen7(false);
       };
    
-const handleOpen1 = () => {
-      setOpen1(true);
-    };
-    const handleOpen2 = () => {
-      setOpen2(true);
-    };
-    const handleOpen3 = () => {
-      setOpen3(true);
-    };
-    const handleOpen4 = () => {
-      setOpen4(true);
-    };
-    const handleOpen5 = () => {
-      setOpen5(true);
-    };
- 
-const handleClose = () => {
-        setOpen1(false);
-        setOpen2(false);
-        setOpen3(false);
-        setOpen4(false);
-        setOpen5(false);
-    };
     const handleChange = () => {
         setChecked(true);
       };
@@ -334,8 +306,8 @@ const updateWishlist = () => {
      
         <Background className='table'>
             <div className='ViewTwo'>
-            <Sidebar />
-            <Home getWishlist={fetchWishlist} fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} handleClose={handleClose} open1={open1} open2={open2} open3={open3} open4={open4} open5={open5} />
+            <Sidebar fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} handleClose={handleClose}/>
+            <Home getWishlist={fetchWishlist} fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} handleClose={handleClose} />
 
             <ViewTwo open={open} open6={open6} open7={open7} transition={transition} transition2={transition2} transition3={transition3} handleClose1={handleClose1} handleClose2={handleClose2} handleClose3={handleClose3} handleClick={handleClick} post={postWishlist} delete={deleteWishlist} update={updateWishlist} itemName={itemName} name={setItemName} quantityName={quantity} quantity={setQuantity} price={setPrice} priceName={price} location={setLocation} locationName={location} motor={setMotorName} motorName={motorName} id={id} itemId={setItemId}  />
             </div>
