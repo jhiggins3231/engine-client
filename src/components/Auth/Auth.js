@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import ViewOne from '../Wishlist/ViewOne';
 import { makeStyles } from '@material-ui/core/styles';
 import APIURL from '../../helpers/environment';
+import ReactPasswordStrength from 'react-password-strength';
+
+
 const Signtext = styled.div`
     text-align: center;
     font-family: Abril;
@@ -118,7 +121,9 @@ return(
                 <br/>
                 <label className={classes.credential} htmlFor='password'>Password:</label>
                 <br/>
-                <input type='password' className={classes.input} value={password} onChange={(e) => setPassword(e.target.value)}/>
+                <ReactPasswordStrength type='password' minLength={5}
+  minScore={2}
+  scoreWords={['weak', 'okay', 'good', 'strong', 'stronger']} className={classes.input} value={password} onChange={(e) => setPassword(e.target.value)} />
                 <br/>
                 <button className={classes.button} type='submit'>Submit</button>
                 <br/>
