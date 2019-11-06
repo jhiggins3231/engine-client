@@ -13,6 +13,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
+    background: '#0a0908'
   },
   drawer: {
     width: drawerWidth,
@@ -35,7 +36,8 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Playfair',
     borderRadius: '5px',
     padding: '5px',
-    marginTop: '20px'
+    marginTop: '20px',
+    alignItems: 'center'
   },
   header: {
     fontFamily: 'Playfair',
