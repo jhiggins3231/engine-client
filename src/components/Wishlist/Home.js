@@ -57,8 +57,8 @@ const useStyles = makeStyles(theme => ({
       margin: '10px'
     },
     nis: {
-      width: 200,
-      height: 200
+      width: 75,
+      height: 75
     }
 }));
 
@@ -82,7 +82,7 @@ const Home = (props) => {
       <Grid container spacing={3}>
     <Grid item xs={4}>
       <ImageGrid />
-      <img src={nissan} />
+      <img src={nissan} className={classes.nis} />
       </Grid>
       <Grid item xs={2}>
       <Card className={classes.card} id='sr'>
