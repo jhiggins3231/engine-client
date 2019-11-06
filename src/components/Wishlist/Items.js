@@ -19,7 +19,7 @@ import APIURL from '../../helpers/environment';
 //TABLES STYLES
 const StyledTableCell = withStyles(theme => ({
     head: {
-      backgroundColor: '#b2b2b2',
+      backgroundColor: '#a9927d',
       color: "#ffffff",
       fontSize: 18
     },

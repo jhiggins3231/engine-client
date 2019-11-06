@@ -52,7 +52,7 @@ const useStyles2 = makeStyles(theme => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: 190,
-    border:'2px solid #52d1dc',
+    border:'2px solid #a9927d',
     borderRadius: '5px'
   },
   menu: {
@@ -96,9 +96,6 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1),
         left: '35%',
         top: '50%',   
-    },
-    motorSelect: {
-      border: '3px solid #A9927D',
     }
 }));
 
@@ -150,11 +147,10 @@ export default function Inputs(props) {
         <br />
         <br />
         </div>
-        <Selector className={classes.motorSelect}>
+        <Selector className='motorSelect'>
         <TextField
             id="outlined-select-motor"
             select
-            // label="Motor Options"
             className={classes2.textField}
             value={props.motorName} onChange={ (e) => props.motor(e.target.value)}
             SelectProps={{
