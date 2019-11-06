@@ -82,7 +82,7 @@ const Home = (props) => {
       <br />
       <br />
       <br />
-    <Row className={classes.row}>
+    <Row noGutters form className={classes.row}>
       <Col className={classes.grid}>
       <ImageGrid />  
       </Col>
