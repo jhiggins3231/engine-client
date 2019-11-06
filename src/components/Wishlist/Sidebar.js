@@ -53,11 +53,11 @@ export default function PermanentDrawerRight(props) {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          <li button onClick={fetchSR}>SR20DET</li>
-          <li button onClick={fetchJZ}>1/2JZ</li>   
-          <li button onClick={fetchLS}>LSx</li>
-          <li button onClick={fetchRB}>RB20/25/26</li>
-          <li button onCLick={fetchKA}>KA24DE/T</li>
+          <li button onClick={props.fetchSR}>SR20DET</li>
+          <li button onClick={props.fetchJZ}>1/2JZ</li>   
+          <li button onClick={props.fetchLS}>LSx</li>
+          <li button onClick={props.fetchRB}>RB20/25/26</li>
+          <li button onCLick={props.fetchKA}>KA24DE/T</li>
           ))}
         </List>
       </Drawer>
