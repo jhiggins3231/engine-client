@@ -59,7 +59,7 @@ const useStyles = makeStyles(theme => ({
     nis: {
       width: 250,
       height: 175,
-      alignContent: 'center'
+      alignItems: 'center'
     }
 }));
 
