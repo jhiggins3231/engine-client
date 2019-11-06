@@ -68,7 +68,7 @@ const Home = (props) => {
 
 
     return (
-      <div>
+      <div className={classes.root}>
       <br />
       <br />
       <br />
@@ -76,7 +76,7 @@ const Home = (props) => {
       <br />
       <br />
       <Grid container spacing={1}>
-    <Grid item xs={6}>
+    <Grid item xs={4}>
       <ImageGrid />  
       </Grid>
       <Grid item xs={2}>
