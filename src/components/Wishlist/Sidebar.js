@@ -34,9 +34,11 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     width: '100px',
+    height: '50px',
     backgroundColor: '#B2B2B2',
     color: '#FFFFFF',
     fontFamily: 'Playfair',
+    borderRadius: '5px'
   },
 }));
 
@@ -55,13 +57,14 @@ export default function PermanentDrawerRight(props) {
         anchor="right"
       >
         <div className={classes.toolbar} />
+        <h2>Exhaust Videos Eargasms!</h2>
         <Divider />
         <List>
-          <button className={classes.button} onClick={props.fetchSR}>SR20DET</button>
-          <button className={classes.button} onClick={props.fetchJZ}>1/2JZ</button>   
-          <button className={classes.button} onClick={props.fetchLS}>LSx</button>
-          <button className={classes.button} onClick={props.fetchRB}>RB20/25/26</button>
-          <button className={classes.button} onClick={props.fetchKA}>KA24DE/T</button>
+          <li><button className={classes.button} onClick={props.fetchSR}>SR20DET</button></li>
+          <li><button className={classes.button} onClick={props.fetchJZ}>1/2JZ</button></li>   
+          <li><button className={classes.button} onClick={props.fetchLS}>LSx</button></li>
+          <li><button className={classes.button} onClick={props.fetchRB}>RB20/25/26</button></li>
+          <li><button className={classes.button} onClick={props.fetchKA}>KA24DE/T</button></li>
         </List>
       </Drawer>
     </div>
