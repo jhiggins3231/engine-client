@@ -85,7 +85,7 @@ const Home = (props) => {
     <Grid item xs={4} justify='center' alignItems='center'>
       <ImageGrid />
       </Grid>
-      <Grid item xs={2} className={classes.grids}>
+      <Grid item xs={2}>
       <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -108,7 +108,7 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-<Card className={classes.card} id='jz'>
+<Card className={classes.card} id='jz' marginTop='5px'>
       <CardActionArea>
         <CardMedia
           className={classes.media}
