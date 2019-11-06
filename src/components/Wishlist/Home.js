@@ -62,7 +62,8 @@ const useStyles = makeStyles(theme => ({
       width: '310px'
     },
     row: {
-      display: 'inline-block'
+      display: 'inline-block',
+      height: '605px'
     }
 }));
 
@@ -76,17 +77,16 @@ const Home = (props) => {
 
 
     return (
-      <Container fluid>
+      <Container className={classes.row} fluid>
       <br />
       <br />
       <br />
       <br />
       <br />
-    <Row noGutters form className={classes.row}>
-      <Col className={classes.grid}>
+    <div className={classes.grid}>
       <ImageGrid />  
-      </Col>
-      <Col className={classes.col}>
+      </div>
+      <div className={classes.col}>
       <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -131,8 +131,8 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-    </Col>
-    <Col className={classes.col}>
+    </div>
+    <div className={classes.col}>
 <Card className={classes.card} id='ls'>
       <CardActionArea>
         <CardMedia
@@ -177,8 +177,8 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-    </Col>
-    <Col className={classes.col}>
+    </div>
+    <div className={classes.col}>
 <Card className={classes.card} id='ka'>
       <CardActionArea>
         <CardMedia
@@ -223,8 +223,7 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-    </Col>
-</Row>
+    </div>
 </Container>
     );
 }
