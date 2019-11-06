@@ -17,7 +17,6 @@ const useStyles = makeStyles(theme => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    background: '#0a0908'
   },
   drawerPaper: {
     width: drawerWidth,
@@ -27,6 +26,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
+    background: '#0a0908'
   },
   button: {
     width: '100px',
