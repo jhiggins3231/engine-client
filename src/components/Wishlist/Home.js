@@ -56,10 +56,13 @@ const useStyles = makeStyles(theme => ({
         height: 140,
     },
     grid: {
-      widht: '500px'
+      width: '500px'
     },
     col: {
       width: '310px'
+    },
+    row: {
+      display: 'inline-block'
     }
 }));
 
@@ -79,7 +82,7 @@ const Home = (props) => {
       <br />
       <br />
       <br />
-    <Row>
+    <Row className={classes.row}>
       <Col className={classes.grid}>
       <ImageGrid />  
       </Col>
