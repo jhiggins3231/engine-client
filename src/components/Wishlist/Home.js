@@ -55,7 +55,7 @@ const useStyles = makeStyles(theme => ({
     },
     root: {
       flexGrow: 1,
-      margin: '30px',
+      margin: 'auto',
       left: '50%',
       top: '50%',
       transfrom: 'translate(-50%, -50%)'
