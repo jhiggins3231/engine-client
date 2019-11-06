@@ -17,6 +17,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import nissan from '../../MotorAssets/nissan.png'
+import logo from '../../MotorAssets/240.png'
 
 
 
@@ -83,6 +84,7 @@ const Home = (props) => {
     <Grid item xs={4} justify='center' alignItems='center'>
       <ImageGrid />
       <img src={nissan} className={classes.nis} />
+      <img src={logo} className={classes.nis} />
       </Grid>
       <Grid item xs={2}>
       <Card className={classes.card} id='sr'>
