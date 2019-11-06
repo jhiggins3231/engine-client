@@ -48,8 +48,6 @@ const useStyles = makeStyles(theme => ({
     },
     card: {
         maxWidth: 305,
-        maxHeight: 400,
-        margin: '4px',
         border: '1px solid black'
     },
     media: {
@@ -70,12 +68,14 @@ const Home = (props) => {
 
 
     return (
+      <div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Grid container spacing={3}>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     <Grid item xs={3}>
       <ImageGrid />  
       </Grid>
@@ -218,6 +218,7 @@ const Home = (props) => {
     </Card>
     </Grid>
 </Grid>
+</div>
     );
 }
 export default Home;
