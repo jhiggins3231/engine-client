@@ -16,8 +16,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import { Container, Row, Col } from 'reactstrap';
-
+import nissan from '../../MotorAssets/240.png'
 
 
 
@@ -75,9 +74,10 @@ const Home = (props) => {
       <br />
       <br />
       <br />
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
     <Grid item xs={4}>
-      <ImageGrid />  
+      <ImageGrid />
+      <img src={nissan} />
       </Grid>
       <Grid item xs={2}>
       <Card className={classes.card} id='sr'>
