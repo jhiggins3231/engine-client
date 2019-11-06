@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
     overflowX: 'auto',
     },
     table: {
-    minWidth: 700,
+    maxWidth: 700,
     },
     }));
 
