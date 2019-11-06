@@ -8,7 +8,7 @@ const Signtext = styled.div`
     text-align: center;
     font-family: Abril;
     padding: 5px;
-    color: #FFFFFF;
+    color: #F2F4F3;
     font-weight: 500;
     `;
 const useStyles = makeStyles(theme => ({
@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
         input: {
             margin: theme.spacing(1),
             fontFamily: 'Abril',
-            color: '#FFFFFF',
+            color: '#F2F4F3',
             background: 'rgba(0, 0, 0, 0.8)',
             border: '2px solid #22333b',
             borderRadius: '5px',
@@ -36,6 +36,7 @@ const useStyles = makeStyles(theme => ({
         },
         button: {
             backgroundColor: '#22333b',
+            color: "#F2F4F3"
             width: '120px',
             height: '25px',
             margin: theme.spacing(1), 
