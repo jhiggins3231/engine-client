@@ -12,12 +12,12 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
-    background: '#0a0908'
+    display: 'flex'
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
+    background: '#0a0908'
   },
   drawerPaper: {
     width: drawerWidth,
@@ -37,6 +37,7 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '5px',
     padding: '5px',
     marginTop: '20px',
+    marginLeft: '10px',
     alignItems: 'center'
   },
   header: {
