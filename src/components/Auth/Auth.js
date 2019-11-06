@@ -18,33 +18,30 @@ const useStyles = makeStyles(theme => ({
             borderRadius: '(0, 10, 0, 10)',
             backgroundColor: 'rgba(0, 0, 0, 0.6)',
             flexWrap: 'wrap',
-            // display: 'block',
             margin: '0 auto',
             left: '50%',
             top: '50%',
-            transform: 'translate(-50%, -50%)',
-            
+            transform: 'translate(-50%, -50%)'  
         },
         input: {
             margin: theme.spacing(1),
             fontFamily: 'Abril',
             color: '#FFFFFF',
             background: 'rgba(0, 0, 0, 0.8)',
-            border: '2px solid #52d1dc',
+            border: '2px solid #22333b',
             borderRadius: '5px',
             height: '30px',
             marginLeft: '50px',
             marginRight: '50px'
         },
         button: {
-            backgroundColor: '#52D1DC',
+            backgroundColor: '#22333b',
             width: '120px',
             height: '25px',
             margin: theme.spacing(1), 
             left: '35%',
             top: '50%',
             borderRadius: '5px',
-            
         },
         credential: {
             fontSize: '18px',

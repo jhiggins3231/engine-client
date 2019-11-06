@@ -14,7 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
   toolbar: {
-    background: 'rgba(0, 0, 0, 0.8)',
+    background: '#0A0908',
   }
 
 }))
