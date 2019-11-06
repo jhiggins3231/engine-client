@@ -35,14 +35,16 @@ const useStyles = makeStyles(theme => ({
     color: '#F2f4f3',
     fontFamily: 'Playfair',
     borderRadius: '5px',
-    padding: '5px',
-    marginTop: '20px',
-    marginLeft: '10px',
+    marginTop: '30px',
+    marginLeft: '30px',
     alignItems: 'center'
   },
   header: {
     fontFamily: 'Playfair',
     color: '#22333B'
+  },
+  list: {
+      backgroundColor: '#0a0908'
   }
 }));
 
