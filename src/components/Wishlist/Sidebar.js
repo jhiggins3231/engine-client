@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
     color: '#F2f4f3',
     fontFamily: 'Playfair',
     borderRadius: '5px',
-    marginTop: '30px',
+    marginTop: '60px',
     marginLeft: '30px',
     alignItems: 'center'
   },
