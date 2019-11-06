@@ -48,7 +48,6 @@ const useStyles = makeStyles(theme => ({
     card: {
         maxWidth: 305,
         border: '1px solid black',
-        padding: '5px',
         flexGrow: 1
     },
     media: {
@@ -59,6 +58,9 @@ const useStyles = makeStyles(theme => ({
       flexGrow: 1,
       marginLeft: '100px',
       merginRight: '100px'
+    },
+    grids: {
+      padding: '10px'
     }
 }));
 
@@ -83,7 +85,7 @@ const Home = (props) => {
     <Grid item xs={4} justify='center' alignItems='center'>
       <ImageGrid />
       </Grid>
-      <Grid item xs={2}>
+      <Grid item xs={2} className={classes.grids}>
       <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
