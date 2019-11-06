@@ -3,6 +3,7 @@ import './Items.css';
 // import Wishlist from './wishlist/wishlist';
 import ViewTwo from './ViewTwo';
 import Home from './Home';
+import Sidebar from './Sidebar';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 //Table components
@@ -333,6 +334,7 @@ const updateWishlist = () => {
      
         <Background className='table'>
             <div className='ViewTwo'>
+            <Sidebar />
             <Home getWishlist={fetchWishlist} fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} handleClose={handleClose} open1={open1} open2={open2} open3={open3} open4={open4} open5={open5} />
 
             <ViewTwo open={open} open6={open6} open7={open7} transition={transition} transition2={transition2} transition3={transition3} handleClose1={handleClose1} handleClose2={handleClose2} handleClose3={handleClose3} handleClick={handleClick} post={postWishlist} delete={deleteWishlist} update={updateWishlist} itemName={itemName} name={setItemName} quantityName={quantity} quantity={setQuantity} price={setPrice} priceName={price} location={setLocation} locationName={location} motor={setMotorName} motorName={motorName} id={id} itemId={setItemId}  />

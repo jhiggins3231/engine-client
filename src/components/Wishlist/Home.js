@@ -108,7 +108,7 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-<Card className={classes.card} id='jz' marginTop='5px'>
+<Card className={classes.card} id='jz'>
       <CardActionArea>
         <CardMedia
           className={classes.media}
