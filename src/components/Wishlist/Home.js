@@ -55,15 +55,8 @@ const useStyles = makeStyles(theme => ({
     media: {
         height: 140,
     },
-    grid: {
-      width: '500px'
-    },
-    col: {
-      width: '310px'
-    },
-    row: {
-      display: 'inline-block',
-      height: '605px'
+    root: {
+      flexGrow: 1,
     }
 }));
 
@@ -77,16 +70,16 @@ const Home = (props) => {
 
 
     return (
-      <Container className={classes.row} fluid>
+      <Grid container spacing={3}>
       <br />
       <br />
       <br />
       <br />
       <br />
-    <div className={classes.grid}>
+    <Grid item xs={3}>
       <ImageGrid />  
-      </div>
-      <div className={classes.col}>
+      </Grid>
+      <Grid item xs={3}>
       <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -131,8 +124,8 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-    </div>
-    <div className={classes.col}>
+    </Grid>
+    <Grid>
 <Card className={classes.card} id='ls'>
       <CardActionArea>
         <CardMedia
@@ -177,8 +170,8 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-    </div>
-    <div className={classes.col}>
+    </Grid>
+    <Grid>
 <Card className={classes.card} id='ka'>
       <CardActionArea>
         <CardMedia
@@ -223,8 +216,8 @@ const Home = (props) => {
         </Button>
       </CardActions>
     </Card>
-    </div>
-</Container>
+    </Grid>
+</Grid>
     );
 }
 export default Home;
