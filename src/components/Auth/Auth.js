@@ -121,9 +121,8 @@ return(
                 <br/>
                 <label className={classes.credential} htmlFor='password'>Password:</label>
                 <br/>
-                <ReactPasswordStrength type='password' minLength={5}
-  minScore={2}
-  scoreWords={['weak', 'okay', 'good', 'strong', 'stronger']} className={classes.input} value={password} onChange={(e) => setPassword(e.target.value)} />
+                <ReactPasswordStrength className={classes.input} minLength={5} minScore={2}
+                scoreWords={['weak', 'okay', 'good', 'strong', 'stronger']} onChange={(e) => setPassword(e.target.value)} />
                 <br/>
                 <button className={classes.button} type='submit'>Submit</button>
                 <br/>
