@@ -38,8 +38,13 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#B2B2B2',
     color: '#FFFFFF',
     fontFamily: 'Playfair',
-    borderRadius: '5px'
+    borderRadius: '5px',
+    padding: '5px'
   },
+  header: {
+    fontFamily: 'Playfair',
+    color: '#22333B'
+  }
 }));
 
 export default function PermanentDrawerRight(props) {
@@ -57,7 +62,7 @@ export default function PermanentDrawerRight(props) {
         anchor="right"
       >
         <div className={classes.toolbar} />
-        <h2>Exhaust Videos Eargasms!</h2>
+        <h3 className={classes.header}>Exhaust Videos for Eargasms!</h3>
         <Divider />
         <List>
           <li><button className={classes.button} onClick={props.fetchSR}>SR20DET</button></li>
