@@ -26,7 +26,6 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
-    background: '#0a0908'
   },
   button: {
     width: '100px',
@@ -44,7 +43,7 @@ const useStyles = makeStyles(theme => ({
     color: '#22333B'
   },
   list: {
-      backgroundColor: '#0a0908'
+    backgroundColor: '#0a0908'
   }
 }));
 
@@ -65,7 +64,7 @@ export default function PermanentDrawerRight(props) {
         <div className={classes.toolbar} />
         <h3 className={classes.header}>Exhaust Videos for Eargasms!</h3>
         <Divider />
-        <List>
+        <List className={classes.list}>
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+sr20+exhaust")}>SR20DET</button></li>
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+jz+exhaust")}>1/2JZ</button></li>   
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+ls+exhaust")}>LSx</button></li>
