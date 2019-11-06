@@ -79,7 +79,7 @@ const Home = (props) => {
     <Grid item xs={6}>
       <ImageGrid />  
       </Grid>
-      <Grid item xs>
+      <Grid item xs={2}>
       <Card className={classes.card} id='sr'>
       <CardActionArea>
         <CardMedia
@@ -125,7 +125,7 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Grid>
-    <Grid item xs>
+    <Grid item xs={2}>
 <Card className={classes.card} id='ls'>
       <CardActionArea>
         <CardMedia
@@ -171,7 +171,7 @@ const Home = (props) => {
       </CardActions>
     </Card>
     </Grid>
-    <Grid item xs>
+    <Grid item xs={2}>
 <Card className={classes.card} id='ka'>
       <CardActionArea>
         <CardMedia
