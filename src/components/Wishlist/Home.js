@@ -87,9 +87,9 @@ const Home = (props) => {
       <br />
       <Grid container spacing={3}>
     <Grid item xs={4} justify='center' alignItems='center'>
-      <ImageGrid />
       <img src={nissan} className={classes.nis} />
       <img src={logo} className={classes.niss} />
+      <ImageGrid />
       </Grid>
       <Grid item xs={2}>
       <Card className={classes.card} id='sr'>

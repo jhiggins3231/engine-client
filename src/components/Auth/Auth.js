@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
         container: {
             display: 'flex',
             position: 'absolute',
-            borderRadius: '7px',
+            borderRadius: '(0, 10, 0, 10)',
             backgroundColor: 'rgba(0, 0, 0, 0.6)',
             flexWrap: 'wrap',
             // display: 'block',
