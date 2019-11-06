@@ -55,7 +55,7 @@ const useStyles = makeStyles(theme => ({
     },
     root: {
       flexGrow: 1,
-      margin: '100px',
+      margin: '(0, 100, 0, 100)'
     },
     nis: {
       width: 250,
