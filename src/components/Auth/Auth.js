@@ -120,7 +120,7 @@ return(
                 <br/>
                 <label className={classes.credential} htmlFor='password'>Password:</label>
                 <br/>
-                <input className={classes.input} minLength={5} value={password} onChange={(e) => setPassword(e.target.value)} />
+                <input className={classes.input} minLength={5} type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
                 <br/>
                 <button className={classes.button} type='submit'>Submit</button>
                 <br/>
