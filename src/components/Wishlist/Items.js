@@ -144,7 +144,6 @@ const fetchSR = () => {
         })
         .then(res => res.json())
         .then(json => setWishlist(json))
-        .then(handleOpen1)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -159,7 +158,6 @@ const fetchJZ = () => {
         })
         .then(res => res.json())
         .then(json => setWishlist(json))
-        .then(handleOpen2)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -174,7 +172,6 @@ const fetchLS = () => {
         })
         .then(res => res.json())
         .then(json => setWishlist(json))
-        .then(handleOpen3)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -189,7 +186,6 @@ const fetchRB = () => {
         })
         .then(res => res.json())
         .then(json => setWishlist(json))
-        .then(handleOpen4)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -204,7 +200,6 @@ const fetchKA = () => {
         })
         .then(res => res.json())
         .then(json => setWishlist(json))
-        .then(handleOpen5)
         .then(handleChange)
         .catch(err => console.log(err))
 }
@@ -306,8 +301,8 @@ const updateWishlist = () => {
      
         <Background className='table'>
             <div className='ViewTwo'>
-            <Sidebar fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} handleClose={handleClose}/>
-            <Home getWishlist={fetchWishlist} fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} handleClose={handleClose} />
+            <Sidebar fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} />
+            <Home getWishlist={fetchWishlist} fetchSR={fetchSR} fetchKA={fetchKA} fetchRB={fetchRB} fetchLS={fetchLS} fetchJZ={fetchJZ} />
 
             <ViewTwo open={open} open6={open6} open7={open7} transition={transition} transition2={transition2} transition3={transition3} handleClose1={handleClose1} handleClose2={handleClose2} handleClose3={handleClose3} handleClick={handleClick} post={postWishlist} delete={deleteWishlist} update={updateWishlist} itemName={itemName} name={setItemName} quantityName={quantity} quantity={setQuantity} price={setPrice} priceName={price} location={setLocation} locationName={location} motor={setMotorName} motorName={motorName} id={id} itemId={setItemId}  />
             </div>
