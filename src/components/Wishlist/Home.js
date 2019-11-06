@@ -16,7 +16,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import nissan from '../../MotorAssets/240.png'
+import nissan from '../../MotorAssets/nissan.png'
 
 
 
@@ -57,8 +57,9 @@ const useStyles = makeStyles(theme => ({
       margin: '10px'
     },
     nis: {
-      width: 75,
-      height: 75
+      width: 250,
+      height: 175,
+      alignContent: 'center'
     }
 }));
 
