@@ -48,10 +48,12 @@ const useStyles = makeStyles(theme => ({
     card: {
         maxWidth: 305,
         border: '1px solid black',
-        buffer: '5px'
+        buffer: '5px',
+        flexGrow: 1
     },
     media: {
         height: 140,
+        flexGrow: 1
     },
     root: {
       flexGrow: 1,
