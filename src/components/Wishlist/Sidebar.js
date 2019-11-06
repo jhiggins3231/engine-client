@@ -3,13 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import List from '@material-ui/core/List';
-import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import { textAlign } from '@material-ui/system';
+
 
 const drawerWidth = 240;
 
@@ -38,8 +34,9 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#B2B2B2',
     color: '#FFFFFF',
     fontFamily: 'Playfair',
-    borderRadius: '5px',
-    padding: '5px'
+    borderRadius: '10px',
+    marginTop: '20px',
+    left: '10%'
   },
   header: {
     fontFamily: 'Playfair',
@@ -53,23 +50,15 @@ export default function PermanentDrawerRight(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <Drawer
-        className={classes.drawer}
-        variant="permanent"
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-        anchor="right"
-      >
-        <div className={classes.toolbar} />
+      <Drawer>
         <h3 className={classes.header}>Exhaust Videos for Eargasms!</h3>
         <Divider />
         <List>
-          <li><button className={classes.button} onClick={props.fetchSR}>SR20DET</button></li>
-          <li><button className={classes.button} onClick={props.fetchJZ}>1/2JZ</button></li>   
-          <li><button className={classes.button} onClick={props.fetchLS}>LSx</button></li>
-          <li><button className={classes.button} onClick={props.fetchRB}>RB20/25/26</button></li>
-          <li><button className={classes.button} onClick={props.fetchKA}>KA24DE/T</button></li>
+          <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=sr20det+exhaust")}>SR20DET</button></li>
+          <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+jz+exhaust")}>1/2JZ</button></li>   
+          <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+ls+exhaust")}>LSx</button></li>
+          <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+rb+exhaust")}>RB20/25/26</button></li>
+          <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+ka+exhaust")}>KA24DE/T</button></li>
         </List>
       </Drawer>
     </div>
