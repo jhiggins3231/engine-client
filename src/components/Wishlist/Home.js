@@ -55,10 +55,17 @@ const useStyles = makeStyles(theme => ({
     },
     root: {
       flexGrow: 1,
-      margin: '10px'
+      margin: '30px',
+      left: '50%',
+      top: '50%',
+      transfrom: 'translate(-50%, -50%)'
     },
     nis: {
       width: 250,
+      height: 175
+    },
+    niss: {
+      width: 200,
       height: 175
     }
 }));
@@ -84,7 +91,7 @@ const Home = (props) => {
     <Grid item xs={4} justify='center' alignItems='center'>
       <ImageGrid />
       <img src={nissan} className={classes.nis} />
-      <img src={logo} className={classes.nis} />
+      <img src={logo} className={classes.niss} />
       </Grid>
       <Grid item xs={2}>
       <Card className={classes.card} id='sr'>
