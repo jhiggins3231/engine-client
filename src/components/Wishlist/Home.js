@@ -58,8 +58,7 @@ const useStyles = makeStyles(theme => ({
     },
     nis: {
       width: 250,
-      height: 175,
-      alignItems: 'center'
+      height: 175
     }
 }));
 
@@ -81,7 +80,7 @@ const Home = (props) => {
       <br />
       <br />
       <Grid container spacing={3}>
-    <Grid item xs={4}>
+    <Grid item xs={4} justify='center' alignItems='center'>
       <ImageGrid />
       <img src={nissan} className={classes.nis} />
       </Grid>
