@@ -13,13 +13,11 @@ import MailIcon from '@material-ui/icons/Mail';
 
 const drawerWidth = 240;
 
+
+
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
-  },
-  appBar: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginRight: drawerWidth,
   },
   drawer: {
     width: drawerWidth,
@@ -33,6 +31,12 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
+  },
+  button: {
+    width: '100px',
+    backgroundColor: '#B2B2B2',
+    color: '#FFFFFF',
+    fontFamily: 'Playfair',
   },
 }));
 
@@ -53,11 +57,11 @@ export default function PermanentDrawerRight(props) {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          <button onClick={props.fetchSR}>SR20DET</button>
-          <button onClick={props.fetchJZ}>1/2JZ</button>   
-          <button onClick={props.fetchLS}>LSx</button>
-          <button onClick={props.fetchRB}>RB20/25/26</button>
-          <button onCLick={props.fetchKA}>KA24DE/T</button>
+          <button className={classes.button} onClick={props.fetchSR}>SR20DET</button>
+          <button className={classes.button} onClick={props.fetchJZ}>1/2JZ</button>   
+          <button className={classes.button} onClick={props.fetchLS}>LSx</button>
+          <button className={classes.button} onClick={props.fetchRB}>RB20/25/26</button>
+          <button className={classes.button} onClick={props.fetchKA}>KA24DE/T</button>
         </List>
       </Drawer>
     </div>
