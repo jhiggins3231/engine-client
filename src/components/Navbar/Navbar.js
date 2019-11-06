@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 const Icon = styled.div`
   display: block;
   position: absolute;
-  left: 95%;
+  left: 5%;
   top: 50%;
   transform: translate(-10%, -50%)
 `;
@@ -31,7 +31,7 @@ const Store = styled.div`
   border-radius: 50%;
   display: block;
   position: absolute;
-  left: 90%;
+  left: 10%;
   top: 50%;
   transform: translate(-10%, -50%)
 `;
