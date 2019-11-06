@@ -6,6 +6,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import APIURL from '../../helpers/environment';
 import ReactPasswordStrength from 'react-password-strength';
 
+const RPS = styled.input`
+    margin: theme.spacing(1),
+    fontFamily: 'Abril',
+    color: '#F2F4F3',
+    background: 'rgba(0, 0, 0, 0.8)',
+    border: '2px solid #22333b',
+    borderRadius: '5px',
+    height: '30px',
+    marginLeft: '50px',
+    marginRight: '50px'
+`;
 
 const Signtext = styled.div`
     text-align: center;
@@ -121,7 +132,7 @@ return(
                 <br/>
                 <label className={classes.credential} htmlFor='password'>Password:</label>
                 <br/>
-                <ReactPasswordStrength className={classes.input} minLength={5} minScore={2}
+                <RPS className={classes.input} minLength={5} minScore={2}
                 scoreWords={['weak', 'okay', 'good', 'strong', 'stronger']} onChange={(e) => setPassword(e.target.value)} />
                 <br/>
                 <button className={classes.button} type='submit'>Submit</button>
