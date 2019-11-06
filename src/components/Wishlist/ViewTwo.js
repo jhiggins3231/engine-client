@@ -75,8 +75,8 @@ const useStyles = makeStyles(theme => ({
     input: {
         margin: theme.spacing(1),
         color: '#FFFFFF',
-        background: '#52d1dc',
-        border: '2px solid #9a8f97',
+        background: '#22333b',
+        border: '2px solid #a9927d',
         borderRadius: '5px',
         height: '50px',
         marginLeft: '50px',
@@ -84,14 +84,14 @@ const useStyles = makeStyles(theme => ({
     },
     input2: {
       margin: theme.spacing(1),
-      border: '2px solid #9a8f97',
+      border: '2px solid #a9927d',
       borderRadius: '5px',
       height: '50px',
       marginLeft: '50px',
       marginRight: '50px'
     },
     button: {
-        backgroundColor: '#B2B2B2',
+        backgroundColor: '#22333b',
         margin: theme.spacing(1),
         left: '35%',
         top: '50%',

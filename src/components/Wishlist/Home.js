@@ -16,8 +16,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import nissan from '../../MotorAssets/nissan.png'
-import logo from '../../MotorAssets/240.png'
+
 
 
 
@@ -57,14 +56,6 @@ const useStyles = makeStyles(theme => ({
       flexGrow: 1,
       marginLeft: '100px',
       merginRight: '100px'
-    },
-    nis: {
-      width: 250,
-      height: 175
-    },
-    niss: {
-      width: 200,
-      height: 175
     }
 }));
 
@@ -87,8 +78,6 @@ const Home = (props) => {
       <br />
       <Grid container spacing={3}>
     <Grid item xs={4} justify='center' alignItems='center'>
-      <img src={nissan} className={classes.nis} />
-      <img src={logo} className={classes.niss} />
       <ImageGrid />
       </Grid>
       <Grid item xs={2}>
