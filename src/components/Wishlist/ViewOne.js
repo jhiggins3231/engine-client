@@ -9,6 +9,7 @@ const Resize = styled.img`
     display: block;
     margin: 0 auto;
     position: absolute;
+    background-size: cover;
 `;
 
 const Background = styled.div`
