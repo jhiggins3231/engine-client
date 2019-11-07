@@ -37,9 +37,9 @@ const useStyles = makeStyles(theme => ({
     width: '120px',
     height: '50px',
     fontFamily: 'Playfair',
-    marginTop: '35px',
-    marginBottom: '35px',
-    marginLeft: '40px',
+    marginTop: '25px',
+    marginBottom: '25px',
+    marginLeft: '25px',
     background: 'linear-gradient(45deg, #0A0908 30%, #22333B 90%)',
     border: 0,
     borderRadius: 3,
@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
   },
   youtube: {
       height: '140px',
-      filter: 'grayscale(90%)'
+      filter: 'grayscale(70%)'
   }
 }));
 
