@@ -7,7 +7,7 @@ import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
 
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
 
 
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(3),
   },
   button: {
-    width: '100px',
+    width: '120px',
     height: '50px',
     fontFamily: 'Playfair',
     marginTop: '35px',
@@ -62,10 +62,9 @@ export default function PermanentDrawerRight(props) {
         classes={{
           paper: classes.drawerPaper,
         }}
-        anchor="right"
-      >
-        <div className={classes.toolbar} />
+        anchor="right">
         <h3 className={classes.header}>Exhaust Videos for Eargasms!</h3>
+        <div className={classes.toolbar} />
         <Divider />
         <List className={classes.list}>
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+sr20+exhaust")}>SR20DET</button></li>
