@@ -78,11 +78,11 @@ export default function PermanentDrawerRight(props) {
         <img className={classes.youtube} src={youtube} />
         <Divider />
         <List className={classes.list}>
-          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+sr20+exhaust")}>SR20DET</button></li>
-          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+jz+exhaust")}>1/2JZ</button></li>   
-          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+ls+exhaust")}>LSx</button></li>
-          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+rb+exhaust")}>RB20/25/26</button></li>
-          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+ka+exhaust")}>KA24DE/T</button></li>
+          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+sr20+exhaust")}>SR20DET</Button></li>
+          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+jz+exhaust")}>1/2JZ</Button></li>   
+          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+ls+exhaust")}>LSx</Button></li>
+          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+rb+exhaust")}>RB20/25/26</Button></li>
+          <li><Button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+ka+exhaust")}>KA24DE/T</Button></li>
         </List>
       </Drawer>
     </div>
