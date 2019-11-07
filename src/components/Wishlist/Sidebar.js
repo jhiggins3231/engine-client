@@ -5,6 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import Button from '@material-ui/core/Button';
+import youtube from '../../MotorAssets/youtube.png';
 
 
 const drawerWidth = 200;
@@ -19,15 +20,18 @@ const useStyles = makeStyles(theme => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
+    backgroundColor: '#0a0908'
   },
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: '#0a0908'
   },
   toolbar: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
+    backgroundColor: '#0a0908'
   },
   button: {
     width: '120px',
@@ -44,7 +48,8 @@ const useStyles = makeStyles(theme => ({
   },
   header: {
     fontFamily: 'Playfair',
-    color: '#22333B'
+    color: '#22333B',
+    backgroundColor: '#0a0908'
   },
   list: {
     backgroundColor: '#0a0908'
@@ -66,6 +71,7 @@ export default function PermanentDrawerRight(props) {
         anchor="right">
         <h3 className={classes.header}>Exhaust Videos for Eargasms!</h3>
         <div className={classes.toolbar} />
+        <img src={youtube} />
         <Divider />
         <List className={classes.list}>
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+sr20+exhaust")}>SR20DET</button></li>
