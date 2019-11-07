@@ -55,7 +55,8 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#0a0908'
   },
   youtube: {
-      height: '150px'
+      height: '80px',
+      filter: 'grayscale(90%)'
   }
 }));
 
