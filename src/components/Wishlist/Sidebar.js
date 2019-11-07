@@ -48,11 +48,14 @@ const useStyles = makeStyles(theme => ({
   },
   header: {
     fontFamily: 'Playfair',
-    color: '#22333B',
+    color: '#f2f4f3',
     backgroundColor: '#0a0908'
   },
   list: {
     backgroundColor: '#0a0908'
+  },
+  youtube: {
+      height: '150px'
   }
 }));
 
