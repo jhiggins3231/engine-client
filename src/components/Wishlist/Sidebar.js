@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
     background: 'linear-gradient(45deg, #0A0908 30%, #22333B 90%)',
     border: 0,
     borderRadius: 3,
-    boxShadow: '0 3px 5px 2px rgba(29, 26, 66, .3)',
+    boxShadow: '0 3px 5px 2px rgba(29, 26, 66, .4)',
     color: 'white',
   },
   header: {
