@@ -10,10 +10,17 @@ const Resize = styled.img`
     margin: 0 auto;
     position: absolute;
     background-size: cover;
+    position: fixed;
+    top: 0;
 `;
 
 const Background = styled.div`
     background-color: #FFFFFF;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
 `;
 
 const ViewOne = (props) => {
