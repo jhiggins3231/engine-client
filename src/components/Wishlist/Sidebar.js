@@ -55,7 +55,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#0a0908'
   },
   youtube: {
-      height: '80px',
+      height: '140px',
       filter: 'grayscale(90%)'
   }
 }));
@@ -75,7 +75,7 @@ export default function PermanentDrawerRight(props) {
         anchor="right">
         <h3 className={classes.header}>Exhaust Videos for Eargasms!</h3>
         <div className={classes.toolbar} />
-        <img src={youtube} />
+        <img className={classes.youtube} src={youtube} />
         <Divider />
         <List className={classes.list}>
           <li><button className={classes.button} onClick={() => window.open("https://www.youtube.com/results?search_query=240sx+sr20+exhaust")}>SR20DET</button></li>
